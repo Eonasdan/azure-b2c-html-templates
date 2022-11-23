@@ -1,0 +1,25 @@
+{
+  "name": "azure-b2c-html-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node ./build/compileScss.js",
+    "sass-watch": "node ./build/compileScss.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eonasdan/azure-b2c-html-templates.git"
+  },
+  "author": "Jonathan peterson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eonasdan/azure-b2c-html-templates/issues"
+  },
+  "homepage": "https://github.com/Eonasdan/azure-b2c-html-templates#readme",
+  "devDependencies": {
+    "@eonasdan/parvus-server": "^1.1.7",
+    "chokidar": "^3.5.3",
+    "sass": "^1.56.1"
+  }
+}

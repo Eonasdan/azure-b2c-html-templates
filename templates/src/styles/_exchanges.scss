@@ -1,0 +1,140 @@
+$domain: 'https://login.microsoftonline.com/templates'
+
+#AmazonExchange {
+  background-image: url(#{$domain}/assets/images/amazon.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/amazon.svg);
+    background-color: #36474f !important;
+  }
+}
+
+#FacebookExchange {
+  background-image: url(#{$domain}/assets/images/facebook.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/facebook.svg);
+    background-color: #3b5595 !important;
+  }
+}
+
+#GitHubExchange {
+  background-image: url(#{$domain}/assets/images/github.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/github.svg);
+    background-color: #0f0f0f !important;
+  }
+}
+
+#AppleExchange, #AppleManagedExchange {
+  background-image: url(#{$domain}/assets/images/apple.svg);
+}
+
+#AppleExchange:hover, #AppleManagedExchange:hover {
+  background-image: url(#{$domain}/assets/images/apple.svg);
+  background-color: #0f0f0f !important;
+}
+
+#GoogleExchange {
+  background-image: url(#{$domain}/assets/images/google.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/google.svg);
+    background-color: #c64a29 !important;
+  }
+}
+
+#LinkedInExchange {
+  background-image: url(#{$domain}/assets/images/linkedin.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/linkedin.svg);
+    background-color: #0274b3 !important;
+  }
+}
+
+#MicrosoftAccountExchange {
+  background-image: url(#{$domain}/assets/images/microsoft.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/microsoft.svg);
+    background-color: #01a4ef !important;
+  }
+}
+
+#QQExchange {
+  background-image: url(#{$domain}/assets/images/qq.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/qq.svg);
+    background-color: #1a97df !important;
+  }
+}
+
+#TwitterExchange {
+  background-image: url(#{$domain}/assets/images/twitter.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/twitter.svg);
+    background-color: #1da1f2 !important;
+  }
+}
+
+#WeChatExchange {
+  background-image: url(#{$domain}/assets/images/wechat.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/wechat.svg);
+    background-color: #4cc522 !important;
+  }
+}
+
+#WeiboExchange {
+  background-image: url(#{$domain}/assets/images/weibo.svg);
+
+  &:hover {
+    background-image: url(#{$domain}/assets/images/weibo.svg);
+    background-color: #e81123 !important;
+  }
+}
+
+#SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
+  background-image: url(#{$domain}/assets/images/local.svg);
+}
+
+#SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
+  background-image: url(#{$domain}/assets/images/local.svg);
+}
+
+#SignUpWithLogonEmailExchange.text-link {
+  background-image: none;
+  background-color: transparent !important;
+
+  &:hover {
+    background-image: none;
+    background-color: transparent !important;
+  }
+}
+
+#LocalAccountSigninEmailExchange, #LocalAccountSigninUsernameExchange, #SignInWithLogonEmailExchange, #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
+  background-color: #296ec6;
+  background-image: none;
+  background-size: 10%;
+  background-position-x: 95%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1em;
+  margin-left: auto;
+}
+
+#LocalAccountSigninEmailExchange:hover, #LocalAccountSigninUsernameExchange:hover, #SignInWithLogonEmailExchange:hover, #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
+  background-color: #1662c7 !important;
+}
+
+
+.buttons #cancel:before {
+  content: url(#{$domain}/src/images/left-arrow.svg);
+}
