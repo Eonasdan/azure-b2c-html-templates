@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node ./build/make.js",
-    "watch": "node ./build/make.js --watch",
-    "sass": "node ./build/compileScss.js",
-    "sass-watch": "node ./build/compileScss.js --watch"
+    "watch": "node ./build/make.js --watch"
   },
   "repository": {
     "type": "git",
