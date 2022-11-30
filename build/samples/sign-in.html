@@ -1,0 +1,93 @@
+<div class="heading">
+    <h1 role="heading">Sign in</h1>
+</div>
+<form id="localAccountForm" action="JavaScript:void(0);" class="localAccount"
+      aria-label="Sign in with your username">
+    <div class="intro">
+        <h2 aria-level="1">
+            Sign in with your username
+        </h2>
+    </div>
+    <div class="error pageLevel" aria-hidden="true" role="alert" style="display: none;">
+        <p></p>
+    </div>
+    <div class="entry">
+        <div class="entry-item">
+            <input type="text" id="UserId" name="Username" title="Please enter a valid Username"
+                   pattern="^[a-zA-Z0-9]+[a-zA-Z0-9_-]*$" autofocus="" placeholder="Username" aria-label="Username"
+                   class="highlightError">
+        </div>
+        <div class="entry-item">
+            <div class="password-label">
+            </div>
+            <div class="error itemLevel" aria-hidden="false" style="display: block;">
+                <p role="alert">Please enter your password</p>
+            </div>
+            <input type="password" id="password" name="Password" placeholder="Password" aria-label="Password"
+                   autocomplete="current-password" aria-required="true" class="highlightError">
+            <div class="forgot-password center-height">
+                <u><a id="forgotPassword" href="/forgot-password.html">Forgot your password?</a></u>
+            </div>
+        </div>
+        <div class="working"></div>
+
+
+        <div class="buttons">
+            <button id="next" type="submit" form="localAccountForm">Sign in</button>
+        </div>
+    </div>
+    <div class="divider">
+        <h2>OR</h2>
+    </div>
+    <div class="create">
+        <p>
+            Don't have an account?<a id="createAccount" href="/sign-up.html">Sign up now</a>
+        </p>
+    </div>
+</form>
+<div class="divider">
+    <h2>OR</h2>
+</div>
+<div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
+    <div class="intro">
+        <h2 aria-level="1">Sign in with your social account</h2>
+    </div>
+    <div class="options">
+        <div>
+            <button class="accountButton firstButton claims-provider-selection" id="MicrosoftAccountExchange"
+                    role="link">Microsoft Account
+            </button>
+            <div>
+                <button class="accountButton claims-provider-selection" id="AmazonExchange" role="link">Amazon Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="AppleExchange" role="link">Apple Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="SignInWithLogonNameExchange" role="link">Email Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="FacebookExchange" role="link">Facebook Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="GithubExchange" role="link">Github Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="GoogleExchange" role="link">Google Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="LinkedinExchange" role="link">Linkedin Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="QqExchange" role="link">Qq Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="WeiboExchange" role="link">Weibo Account</button>
+            </div>
+            <div>
+                <button class="accountButton claims-provider-selection" id="WeChatExchange" role="link">WeChat Account</button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,283 @@
+//idp
+table {
+  width: 40%;
+  margin: auto;
+}
+
+.alert-modal {
+  display: none;
+}
+//end idp
+
+.unified_container .row .panel-default {
+  padding: 40px 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  //height: 100%;
+  background-color: #fff;
+
+  .panel-body {
+    max-width: 380px;
+    width: auto;
+    margin: 0 auto;
+    //padding: 0;
+    //padding: 3rem 1rem; //idp
+
+    .companyName {
+      font-size: 1.5em;
+      margin-bottom: 45px;
+    }
+
+    .companyLogo {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+      height: 70px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      display: none;
+    }
+  }
+
+  #api {
+    display: table;
+    margin: 0;
+    width: 100%;
+
+    .intro {
+      display: block;
+      text-align: left;
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+
+    .divider {
+      display: none;
+    }
+
+    .localAccount {
+      top: 10px;
+      width: 100%;
+
+      .intro h2 {
+        font-size: 20px;
+      }
+
+      .error {
+        color: #b00;
+        text-align: left;
+      }
+
+      .entry {
+        .buttons {
+          margin: 0 0 23px 0;
+          text-align: left;
+
+          //button {
+          //  @extend .btn;
+          //  @extend .btn-primary;
+          //}
+        }
+
+        .entry-item {
+          position: relative;
+          width: 100%;
+          padding-top: 6px;
+          padding-bottom: 6px;
+          display: block;
+
+          label {
+            display: none;
+          }
+
+          input {
+            @extend .form-control;
+          }
+
+          #password {
+            margin-bottom: 20px;
+          }
+
+          .password-label {
+            text-align: left;
+            height: 0;
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+//@media screen and (-ms-high-contrast: active) {
+//  .unified_container .row .panel-default #api {
+//    .accountButton, .localAccount .entry .buttons button {
+//      border: 1px dashed #fff;
+//    }
+//
+//    .accountButton:hover, .localAccount .entry .buttons button:hover {
+//      border: 1px solid #fff;
+//    }
+//  }
+//}
+
+.forgot-password {
+  text-align: left;
+
+  &.center-height {
+    position: absolute;
+    bottom: 0;
+    clear: right;
+    cursor: pointer;
+    text-align: right;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.unified_container .row .panel-default #api .localAccount {
+  .entry .entry-item .password-label #forgotPassword {
+    position: absolute;
+    bottom: 0;
+    clear: right;
+    cursor: pointer;
+    text-align: right;
+  }
+
+  .rememberMe {
+    margin-top: -2rem;
+    text-align: right;
+    margin-left: 59%;
+    position: relative;
+    width: 15rem;
+
+    &.align-to-left {
+      margin-top: 0.5rem;
+      text-align: left;
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.working {
+  display: none;
+}
+
+.unified_container .row .panel-default #api {
+  .claims-provider-list-text-links p {
+    text-align: left;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+  }
+
+  .localAccount .create {
+    p {
+      text-align: left;
+      margin-top: -1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #createAccount {
+      border-radius: 0.5rem;
+      display: inline-block;
+      font-size: 1em;
+      font-weight: 400;
+      height: inherit;
+      line-height: 1.3333333;
+      padding: 10px 16px;
+      text-align: center;
+      touch-action: manipulation;
+      user-select: none;
+      white-space: nowrap;
+      -moz-user-select: none;
+      -ms-touch-action: manipulation;
+      -ms-user-select: none;
+      -webkit-user-select: none;
+      width: auto;
+      margin-top: -3rem;
+      cursor: pointer;
+      animation: 0.5s ease-out 0s 1 slideInFromRight;
+    }
+  }
+
+  .social {
+    display: table-footer-group;
+    position: relative;
+    top: 1px;
+    width: auto;
+  }
+
+  .accountButton {
+    @extend .btn;
+    @extend .btn-light;
+    //background-size: 10% 70%;
+    //background-position-x: 3%;
+    //background-position-y: 50%;
+    //background-repeat: no-repeat;
+    //display: block;
+    //font-size: 16px;
+    height: 45px;
+    width: 100%;
+    //margin-left: auto;
+    //overflow: hidden;
+    //padding: 0 50px;
+    //max-width: 380px;
+    //border: 1px solid #605e5c;
+    //background-color: #fff;
+    //-moz-border-radius: 0.5rem;
+    //-webkit-border-radius: 0.5rem;
+    //border-radius: 0.5rem;
+    margin-top: 10px;
+
+    &:hover {
+      color: #fff;
+      background-color: #1662c7;
+    }
+  }
+}
+
+.claims-provider-list-text-links-bottom-under-form {
+  text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  .unified_container .row .panel-default #api .localAccount {
+    .rememberMe {
+      margin-top: 1.75rem;
+      text-align: left;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .entry .entry-item .password-label #forgotPassword {
+      bottom: -1rem;
+    }
+  }
+
+  .forgot-password.center-height {
+    top: 0;
+    right: 12rem;
+    position: relative;
+  }
+}

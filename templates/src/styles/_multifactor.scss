@@ -1,0 +1,175 @@
+//.buttons button:hover {
+//  background-image: none;
+//}
+
+.phonefactor_container .row {
+  .panel-default {
+    margin: auto;
+    height: 100%;
+    background-color: #fff;
+    min-width: 400px;
+  }
+
+  .panel-body {
+    margin: 0 auto;
+    max-width: 400px;
+    width: auto;
+    padding: 4.2rem 1rem;
+
+    img {
+      height: 70px;
+      margin: 0 auto;
+    }
+  }
+}
+
+button {
+  &#sendCode, &#verifyCode, &#verifyPhone {
+    margin-top: 2rem;
+    width: 60%;
+    height: 50px;
+  }
+}
+
+#api {
+  #codeVerification {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  #phonefactor_initial .intro p {
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .intro p {
+    margin-top: 20px;
+  }
+
+  #phoneEntry {
+    &.phoneEntry {
+      margin-top: 10px;
+
+      .input .code {
+        text-align: left;
+      }
+    }
+
+    .input {
+      .code #countryCode {
+        height: 50px;
+        border-radius: 0.5rem;
+        width: 100%;
+        margin-bottom: 15px;
+        padding-left: 15px;
+
+        &:focus {
+          border: 2px solid #000;
+        }
+      }
+
+      .error.itemLevel p {
+        color: #d30000;
+      }
+    }
+
+    &.phoneEntry .input .number {
+      text-align: left;
+
+      #number {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 50px;
+        border: 1px solid #6a6a6a;
+        text-indent: 20px;
+        outline: 0;
+
+        &:focus {
+          border: 2px solid #000;
+        }
+      }
+    }
+  }
+
+  #phonefactor_initial #phoneEntry select#countryCode {
+    height: 45px;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid #6a6a6a;
+  }
+
+  #phoneEntry {
+    select {
+      &:hover {
+        border-color: #888;
+      }
+
+      option {
+        font-weight: 400;
+      }
+    }
+
+    input#localNumber {
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 50px;
+      border: 1px solid #6a6a6a;
+      text-indent: 20px;
+      outline: 0;
+    }
+  }
+
+  #phonefactor_initial #phoneEntry input#localNumber:focus {
+    border: 2px solid #000;
+  }
+
+  .working {
+    display: none;
+  }
+}
+
+#codeVerification {
+  #verificationCode {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #6a6a6a;
+    text-indent: 20px;
+    outline: 0;
+
+    &:focus {
+      border: 2px solid #000;
+    }
+  }
+
+  #retryCode {
+    cursor: pointer;
+    color: #337ab7;
+    text-decoration: none;
+
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .error.itemLevel p {
+    color: #d30000;
+  }
+}
+
+
+.phoneNumbers .phoneNumber {
+  .displayName, .type {
+    display: none;
+  }
+
+  .number, label[for="1"] {
+    margin-top: 10px;
+  }
+}

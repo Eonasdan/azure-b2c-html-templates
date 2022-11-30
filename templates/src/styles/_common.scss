@@ -1,26 +1,13 @@
-html {
-  background: 0 0;
-}
-
 body {
+  margin: 0; //idp
+  padding: 0; //idp
   background-attachment: fixed;
   background-color: #fff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
-}
-
-p {
-  margin: 0;
-}
-
-a:focus {
-  outline: 0;
-}
-
-input, select {
-  border: 1px solid #605e5c;
+  background-image: url(#{$domain}/assets/images/1-1.png);
 }
 
 input::placeholder {
@@ -48,14 +35,6 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   display: table;
   height: 100vh;
   padding: 0;
-}
-
-#api {
-  margin: 0 auto;
-}
-
-.heading h1 {
-  margin-bottom: 20px;
 }
 
 .col-lg-6 {
@@ -88,27 +67,8 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 
 .buttons {
   button {
-    width: 60%;
-    height: 50px;
-    background-color: #296ec6;
-    border-radius: 0.5rem;
-    border: none;
-    color: #fff;
-    font-size: 1em;
-    margin: 10px auto 0;
-
-    &:hover {
-      background-color: #1662c7;
-      border-color: #204d74;
-    }
-
-    &[aria-disabled="true"] {
-      opacity: 0.3;
-    }
-
-    &:not([aria-disabled="true"]) {
-      opacity: 1;
-    }
+    @extend .btn;
+    @extend .btn-primary;
   }
 
   #cancel {
@@ -138,14 +98,244 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   }
 }
 
+#api {
+  margin: 0 auto;
+
+  //idp
+  ul li {
+    display: block;
+    list-style-type: none;
+  }
+
+  .intro {
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      text-align: left;
+      font-size: 1.5em;
+      margin: auto;
+    }
+  }
+//end idp
+
+  .working {
+    height: 30px;
+    width: auto;
+    background: url(data:image/gif;base64,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) no-repeat center bottom;
+  }
+}
+
+label {
+  @extend .form-label;
+  font-weight: 600;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  #attributeList ul li .attrEntry .verify button, .buttons #continue {
+    border: 1px dashed #fff !important;
+  }
+
+  #attributeList ul li .attrEntry .verify button:hover, .buttons #continue:hover {
+    border: 1px solid #fff !important;
+  }
+}
+
+#attributeList ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin: 1rem 0;
+
+    label {
+      display: block;
+      text-align: left;
+      float: none;
+    }
+
+    &.EmailBox label, &.Password label, &.TextBox label {
+      display: none !important;
+    }
+
+    label {
+      &[for="country"] {
+        float: left;
+        display: inline-block !important;
+        margin-bottom: 0.5rem;
+      }
+
+      &[for="cpiminternal_legalCountry"] {
+        float: none;
+        display: block !important;
+        text-align: left;
+        margin-bottom: 0.5rem;
+      }
+
+      &[for="cpiminternal_dateOfBirth"] {
+        float: none;
+        text-align: left;
+        display: block !important;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    input {
+      height: 50px;
+      width: 70%;
+      border-radius: 0.5rem;
+      text-indent: 20px;
+
+      &::-webkit-input-placeholder {
+        text-indent: 20px;
+      }
+    }
+
+    .attrEntry {
+      &.validate input {
+        &.invalid, &:invalid {
+          border: 1px solid #b00;
+        }
+      }
+
+      .itemLevel {
+        display: none;
+      }
+
+      .dropdown_single {
+        height: 45px;
+        border-radius: 0.5rem;
+        width: 100%;
+        padding-left: 15px;
+      }
+
+      div#cpiminternal_dateOfBirth {
+        &.date {
+          display: table;
+          width: 100%;
+
+          select {
+            border-radius: 0.5rem;
+            display: inline-block;
+            height: 50px;
+            padding-left: 15px;
+          }
+        }
+
+        select {
+          &#cpiminternal_dateOfBirth_day.day {
+            margin-right: 3%;
+            width: 23%;
+          }
+
+          &#cpiminternal_dateOfBirth_month.month {
+            margin-right: 3%;
+            width: 38%;
+          }
+
+          &#cpiminternal_dateOfBirth_year.year {
+            width: 33%;
+          }
+        }
+      }
 
 
-///////////
+      .verify, .verificationControlContent .buttons {
+        margin-top: 2rem;
+        padding-bottom: 10px;
+        position: relative;
+      }
 
+      .verify .sendButton[id$="ver_but_send"], .verificationControlContent .sendCode {
+        width: 60%;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
 
+      .verify .sendButton[id$="ver_but_send"]:hover, .verificationControlContent .sendCode:hover {
+        background-color: #1662c7;
+      }
 
+      .verify .verifyButton, .verificationControlContent .verifyCode {
+        width: inherit;
+        padding: 0 20px;
+        height: 50px;
+        background-color: #296ec6;
+        color: #fff;
+        margin-right: 5px;
+        border-radius: 0.5rem;
+      }
 
+      .verify .verifyButton:hover, .verificationControlContent .verifyCode:hover {
+        background-color: #1662c7;
+      }
 
+      .verify .sendButton[id$="ver_but_resend"], .verificationControlContent .sendNewCode {
+        width: inherit;
+        padding: 0 20px;
+        border: 0;
+        font-size: 1em;
+        height: 50px;
+        right: 0;
+        bottom: -38px;
+        background-color: #296ec6;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
 
+      .verify .sendButton[id$="ver_but_resend"]:hover, .verificationControlContent .sendNewCode:hover {
+        background-color: #1662c7;
+      }
 
+      .verify .editButton, .verificationControlContent .changeClaims {
+        border: none;
+        color: #fff;
+        background-color: #296ec6;
+        width: 60%;
+        height: 50px;
+        border-radius: 0.5rem;
+      }
 
+      .verify .editButton:hover, .verificationControlContent .changeClaims:hover {
+        background-color: #1662c7;
+      }
+
+      .verify #email_ver_input_label {
+        display: none !important;
+      }
+    }
+
+    .helpLink {
+      display: none;
+    }
+  }
+}
+
+input {
+  &[type="email"], &[type="password"], &[type="text"] {
+    @extend .form-control;
+    -webkit-appearance: none;
+  }
+}
+
+#attributeVerification .buttons {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  img[data-tenant-branding-background="true"] {
+    display: none;
+  }
+
+  .container {
+    background-color: #fff;
+
+    .row .panel-default {
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

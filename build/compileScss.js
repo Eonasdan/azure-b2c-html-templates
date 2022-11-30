@@ -24,7 +24,7 @@ class CompileScss {
         this.css = compileResult.css;
 
         this.writeFileAndEnsurePathExistsAsync('./emulator/css/styles.css', this.css);
-        this.writeFileAndEnsurePathExistsAsync('./templates/Bootstrap523/assets/styles.css', this.css);
+        this.writeFileAndEnsurePathExistsAsync('./templates/Bootstrap/assets/styles.css', this.css);
     }
 
     startFileWatcher() {

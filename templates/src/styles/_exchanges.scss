@@ -1,110 +1,132 @@
-$domain: 'https://login.microsoftonline.com/templates'
+.accountButton:before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-brands);
+  position: absolute;
+  left: 1rem;
+  font-size: 1.7rem;
+}
 
 #AmazonExchange {
-  background-image: url(#{$domain}/assets/images/amazon.svg);
+  &:before {
+    content: "\f270";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/amazon.svg);
     background-color: #36474f !important;
   }
 }
 
 #FacebookExchange {
-  background-image: url(#{$domain}/assets/images/facebook.svg);
+ &:before {
+   content: "\f09a";
+ }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/facebook.svg);
     background-color: #3b5595 !important;
   }
 }
 
 #GitHubExchange {
-  background-image: url(#{$domain}/assets/images/github.svg);
+  &:before {
+    content: "\f09b";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/github.svg);
     background-color: #0f0f0f !important;
   }
 }
 
 #AppleExchange, #AppleManagedExchange {
-  background-image: url(#{$domain}/assets/images/apple.svg);
+  &:before {
+    content: "\f179";
+  }
 }
 
 #AppleExchange:hover, #AppleManagedExchange:hover {
-  background-image: url(#{$domain}/assets/images/apple.svg);
   background-color: #0f0f0f !important;
 }
 
 #GoogleExchange {
-  background-image: url(#{$domain}/assets/images/google.svg);
+  &:before {
+    content: "\f1a0";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/google.svg);
     background-color: #c64a29 !important;
   }
 }
 
 #LinkedInExchange {
-  background-image: url(#{$domain}/assets/images/linkedin.svg);
+  &:before {
+    content: "\f08c";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/linkedin.svg);
     background-color: #0274b3 !important;
   }
 }
 
 #MicrosoftAccountExchange {
-  background-image: url(#{$domain}/assets/images/microsoft.svg);
+  &:before {
+    content: '\f3ca';
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/microsoft.svg);
     background-color: #01a4ef !important;
   }
 }
 
 #QQExchange {
-  background-image: url(#{$domain}/assets/images/qq.svg);
+  &:before {
+    content: "\f1d6";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/qq.svg);
     background-color: #1a97df !important;
   }
 }
 
 #TwitterExchange {
-  background-image: url(#{$domain}/assets/images/twitter.svg);
+  &:before {
+    content: "\f099";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/twitter.svg);
     background-color: #1da1f2 !important;
   }
 }
 
 #WeChatExchange {
-  background-image: url(#{$domain}/assets/images/wechat.svg);
+  &:before {
+    content: "\f1d7";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/wechat.svg);
     background-color: #4cc522 !important;
   }
 }
 
 #WeiboExchange {
-  background-image: url(#{$domain}/assets/images/weibo.svg);
+  &:before {
+    content: "\f18a";
+  }
 
   &:hover {
-    background-image: url(#{$domain}/assets/images/weibo.svg);
     background-color: #e81123 !important;
   }
 }
 
 #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-  background-image: url(#{$domain}/assets/images/local.svg);
+  &:before {
+    content: '';
+    background-image: url(#{$domain}/assets/images/icons/envelope.svg);
+  }
 }
 
 #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
-  background-image: url(#{$domain}/assets/images/local.svg);
+  background-color: #1662c7 !important;
 }
 
 #SignUpWithLogonEmailExchange.text-link {
@@ -117,24 +139,6 @@ $domain: 'https://login.microsoftonline.com/templates'
   }
 }
 
-#LocalAccountSigninEmailExchange, #LocalAccountSigninUsernameExchange, #SignInWithLogonEmailExchange, #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-  background-color: #296ec6;
-  background-image: none;
-  background-size: 10%;
-  background-position-x: 95%;
-  background-position-y: 50%;
-  background-repeat: no-repeat;
-  border-radius: 0.5rem;
-  width: 100%;
-  font-size: 1em;
-  margin-left: auto;
-}
-
-#LocalAccountSigninEmailExchange:hover, #LocalAccountSigninUsernameExchange:hover, #SignInWithLogonEmailExchange:hover, #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
-  background-color: #1662c7 !important;
-}
-
-
 .buttons #cancel:before {
-  content: url(#{$domain}/src/images/left-arrow.svg);
+  content: url(#{$domain}/assets/images/icons/left-long.svg);
 }
