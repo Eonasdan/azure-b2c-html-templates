@@ -1983,7 +1983,7 @@ progress {
   color: #6c757d;
 }
 
-.form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item input, input[type=email], input[type=password], input[type=text] {
+.form-control, input[type=email], input[type=password], input[type=text], #api .localAccount .entry .entry-item input {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1999,35 +1999,35 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item input, input[type=email], input[type=password], input[type=text] {
+  .form-control, input[type=email], input[type=password], input[type=text], #api .localAccount .entry .entry-item input {
     transition: none;
   }
 }
-.form-control[type=file], .unified_container .row .panel-default #api .localAccount .entry .entry-item input[type=file], input[type=file][type=email], input[type=file][type=password], input[type=file][type=text] {
+.form-control[type=file], input[type=file][type=email], input[type=file][type=password], input[type=file][type=text], #api .localAccount .entry .entry-item input[type=file] {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]), .unified_container .row .panel-default #api .localAccount .entry .entry-item input[type=file]:not(:disabled):not([readonly]), input[type=file][type=email]:not(:disabled):not([readonly]), input[type=file][type=password]:not(:disabled):not([readonly]), input[type=file][type=text]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), input[type=file][type=email]:not(:disabled):not([readonly]), input[type=file][type=password]:not(:disabled):not([readonly]), input[type=file][type=text]:not(:disabled):not([readonly]), #api .localAccount .entry .entry-item input[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item input:focus, input[type=email]:focus, input[type=password]:focus, input[type=text]:focus {
+.form-control:focus, input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, #api .localAccount .entry .entry-item input:focus {
   color: #212529;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.form-control::-webkit-date-and-time-value, .unified_container .row .panel-default #api .localAccount .entry .entry-item input::-webkit-date-and-time-value, input[type=email]::-webkit-date-and-time-value, input[type=password]::-webkit-date-and-time-value, input[type=text]::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, input[type=email]::-webkit-date-and-time-value, input[type=password]::-webkit-date-and-time-value, input[type=text]::-webkit-date-and-time-value, #api .localAccount .entry .entry-item input::-webkit-date-and-time-value {
   height: 1.5em;
 }
-.form-control::placeholder, .unified_container .row .panel-default #api .localAccount .entry .entry-item input::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder {
+.form-control::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder, #api .localAccount .entry .entry-item input::placeholder {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:disabled, .unified_container .row .panel-default #api .localAccount .entry .entry-item input:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled {
+.form-control:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled, #api .localAccount .entry .entry-item input:disabled {
   background-color: #e9ecef;
   opacity: 1;
 }
-.form-control::file-selector-button, .unified_container .row .panel-default #api .localAccount .entry .entry-item input::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button {
+.form-control::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button, #api .localAccount .entry .entry-item input::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -2042,11 +2042,11 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button, .unified_container .row .panel-default #api .localAccount .entry .entry-item input::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button {
+  .form-control::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button, #api .localAccount .entry .entry-item input::file-selector-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .unified_container .row .panel-default #api .localAccount .entry .entry-item input:hover:not(:disabled):not([readonly])::file-selector-button, input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button, #api .localAccount .entry .entry-item input:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
 
@@ -2389,7 +2389,7 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text],
+.form-floating > .form-control, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text], #api .localAccount .entry .entry-item .form-floating > input,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
   height: calc(3.5rem + 2px);
@@ -2416,21 +2416,21 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text],
+.form-floating > .form-control, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text], #api .localAccount .entry .entry-item .form-floating > input,
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::placeholder, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input::placeholder, .form-floating > input[type=email]::placeholder, .form-floating > input[type=password]::placeholder, .form-floating > input[type=text]::placeholder,
+.form-floating > .form-control::placeholder, .form-floating > input[type=email]::placeholder, .form-floating > input[type=password]::placeholder, .form-floating > input[type=text]::placeholder, #api .localAccount .entry .entry-item .form-floating > input::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:focus, .form-floating > input[type=email]:focus, .form-floating > input[type=password]:focus, .form-floating > input[type=text]:focus, .form-floating > .form-control:not(:placeholder-shown), .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown), .form-floating > input[type=email]:not(:placeholder-shown), .form-floating > input[type=password]:not(:placeholder-shown), .form-floating > input[type=text]:not(:placeholder-shown),
+.form-floating > .form-control:focus, .form-floating > input[type=email]:focus, .form-floating > input[type=password]:focus, .form-floating > input[type=text]:focus, #api .localAccount .entry .entry-item .form-floating > input:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > input[type=email]:not(:placeholder-shown), .form-floating > input[type=password]:not(:placeholder-shown), .form-floating > input[type=text]:not(:placeholder-shown), #api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill, .form-floating > input[type=email]:-webkit-autofill, .form-floating > input[type=password]:-webkit-autofill, .form-floating > input[type=text]:-webkit-autofill,
+.form-floating > .form-control:-webkit-autofill, .form-floating > input[type=email]:-webkit-autofill, .form-floating > input[type=password]:-webkit-autofill, .form-floating > input[type=text]:-webkit-autofill, #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill,
 .form-floating > .form-control-plaintext:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
@@ -2439,18 +2439,18 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus ~ label, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:focus ~ label, .form-floating > input[type=email]:focus ~ label, .form-floating > input[type=password]:focus ~ label, .form-floating > input[type=text]:focus ~ label,
+.form-floating > .form-control:focus ~ label, .form-floating > input[type=email]:focus ~ label, .form-floating > input[type=password]:focus ~ label, .form-floating > input[type=text]:focus ~ label, #api .localAccount .entry .entry-item .form-floating > input:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown) ~ label,
 .form-floating > input[type=email]:not(:placeholder-shown) ~ label,
 .form-floating > input[type=password]:not(:placeholder-shown) ~ label,
 .form-floating > input[type=text]:not(:placeholder-shown) ~ label,
+#api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:-webkit-autofill ~ label, .unified_container .row .panel-default #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill ~ label, .form-floating > input[type=email]:-webkit-autofill ~ label, .form-floating > input[type=password]:-webkit-autofill ~ label, .form-floating > input[type=text]:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, .form-floating > input[type=email]:-webkit-autofill ~ label, .form-floating > input[type=password]:-webkit-autofill ~ label, .form-floating > input[type=text]:-webkit-autofill ~ label, #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -2465,7 +2465,7 @@ textarea.form-control-lg {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input, .input-group > input[type=email], .input-group > input[type=password], .input-group > input[type=text],
+.input-group > .form-control, .input-group > input[type=email], .input-group > input[type=password], .input-group > input[type=text], #api .localAccount .entry .entry-item .input-group > input,
 .input-group > .form-select,
 .input-group > .form-floating {
   position: relative;
@@ -2473,7 +2473,7 @@ textarea.form-control-lg {
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input:focus, .input-group > input[type=email]:focus, .input-group > input[type=password]:focus, .input-group > input[type=text]:focus,
+.input-group > .form-control:focus, .input-group > input[type=email]:focus, .input-group > input[type=password]:focus, .input-group > input[type=text]:focus, #api .localAccount .entry .entry-item .input-group > input:focus,
 .input-group > .form-select:focus,
 .input-group > .form-floating:focus-within {
   z-index: 5;
@@ -2501,7 +2501,7 @@ textarea.form-control-lg {
   border-radius: 0.375rem;
 }
 
-.input-group-lg > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group-lg > input, .input-group-lg > input[type=email], .input-group-lg > input[type=password], .input-group-lg > input[type=text],
+.input-group-lg > .form-control, .input-group-lg > input[type=email], .input-group-lg > input[type=password], .input-group-lg > input[type=text], #api .localAccount .entry .entry-item .input-group-lg > input,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
@@ -2512,7 +2512,7 @@ textarea.form-control-lg {
   border-radius: 0.5rem;
 }
 
-.input-group-sm > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group-sm > input, .input-group-sm > input[type=email], .input-group-sm > input[type=password], .input-group-sm > input[type=text],
+.input-group-sm > .form-control, .input-group-sm > input[type=email], .input-group-sm > input[type=password], .input-group-sm > input[type=text], #api .localAccount .entry .entry-item .input-group-sm > input,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
@@ -2531,10 +2531,10 @@ textarea.form-control-lg {
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
-.unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group:not(.has-validation) > .form-floating:not(:last-child) > input,
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=password],
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
+#api .localAccount .entry .entry-item .input-group:not(.has-validation) > .form-floating:not(:last-child) > input,
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -2542,10 +2542,10 @@ textarea.form-control-lg {
 .input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4),
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control,
-.unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group.has-validation > .form-floating:nth-last-child(n+3) > input,
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=password],
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
+#api .localAccount .entry .entry-item .input-group.has-validation > .form-floating:nth-last-child(n+3) > input,
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -2555,7 +2555,7 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-group > .form-floating:not(:first-child) > .form-control, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > .form-floating:not(:first-child) > input, .input-group > .form-floating:not(:first-child) > input[type=email], .input-group > .form-floating:not(:first-child) > input[type=password], .input-group > .form-floating:not(:first-child) > input[type=text],
+.input-group > .form-floating:not(:first-child) > .form-control, .input-group > .form-floating:not(:first-child) > input[type=email], .input-group > .form-floating:not(:first-child) > input[type=password], .input-group > .form-floating:not(:first-child) > input[type=text], #api .localAccount .entry .entry-item .input-group > .form-floating:not(:first-child) > input,
 .input-group > .form-floating:not(:first-child) > .form-select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -2590,7 +2590,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item input:valid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated input:valid, .was-validated input[type=email]:valid, .was-validated input[type=password]:valid, .was-validated input[type=text]:valid, .form-control.is-valid, .unified_container .row .panel-default #api .localAccount .entry .entry-item input.is-valid, input.is-valid[type=email], input.is-valid[type=password], input.is-valid[type=text] {
+.was-validated .form-control:valid, .was-validated input[type=email]:valid, .was-validated input[type=password]:valid, .was-validated input[type=text]:valid, .was-validated #api .localAccount .entry .entry-item input:valid, #api .localAccount .entry .entry-item .was-validated input:valid, .form-control.is-valid, input.is-valid[type=email], input.is-valid[type=password], input.is-valid[type=text], #api .localAccount .entry .entry-item input.is-valid {
   border-color: #198754;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -2598,7 +2598,7 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item input:valid:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated input:valid:focus, .was-validated input[type=email]:valid:focus, .was-validated input[type=password]:valid:focus, .was-validated input[type=text]:valid:focus, .form-control.is-valid:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item input.is-valid:focus, input.is-valid[type=email]:focus, input.is-valid[type=password]:focus, input.is-valid[type=text]:focus {
+.was-validated .form-control:valid:focus, .was-validated input[type=email]:valid:focus, .was-validated input[type=password]:valid:focus, .was-validated input[type=text]:valid:focus, .was-validated #api .localAccount .entry .entry-item input:valid:focus, #api .localAccount .entry .entry-item .was-validated input:valid:focus, .form-control.is-valid:focus, input.is-valid[type=email]:focus, input.is-valid[type=password]:focus, input.is-valid[type=text]:focus, #api .localAccount .entry .entry-item input.is-valid:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
@@ -2643,7 +2643,7 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input:not(:focus):valid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):valid, .was-validated .input-group > input[type=email]:not(:focus):valid, .was-validated .input-group > input[type=password]:not(:focus):valid, .was-validated .input-group > input[type=text]:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-valid, .input-group > input[type=email]:not(:focus).is-valid, .input-group > input[type=password]:not(:focus).is-valid, .input-group > input[type=text]:not(:focus).is-valid,
+.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .input-group > input[type=email]:not(:focus):valid, .was-validated .input-group > input[type=password]:not(:focus):valid, .was-validated .input-group > input[type=text]:not(:focus):valid, .was-validated #api .localAccount .entry .entry-item .input-group > input:not(:focus):valid, #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .input-group > input[type=email]:not(:focus).is-valid, .input-group > input[type=password]:not(:focus).is-valid, .input-group > input[type=text]:not(:focus).is-valid, #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-valid,
 .was-validated .input-group > .form-select:not(:focus):valid,
 .input-group > .form-select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
@@ -2651,7 +2651,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
-.invalid-feedback {
+.invalid-feedback, #api .localAccount .error {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
@@ -2673,14 +2673,23 @@ textarea.form-control-lg {
   border-radius: 0.375rem;
 }
 
-.was-validated :invalid ~ .invalid-feedback,
+.was-validated :invalid ~ .invalid-feedback, .was-validated #api .localAccount :invalid ~ .error, #api .localAccount .was-validated :invalid ~ .error,
 .was-validated :invalid ~ .invalid-tooltip,
 .is-invalid ~ .invalid-feedback,
-.is-invalid ~ .invalid-tooltip {
+#attributeList ul li .attrEntry.validate input.invalid ~ .invalid-feedback,
+#attributeList ul li .attrEntry.validate input:invalid ~ .invalid-feedback,
+#api .localAccount .is-invalid ~ .error,
+#api .localAccount #attributeList ul li .attrEntry.validate input.invalid ~ .error,
+#attributeList ul li .attrEntry.validate #api .localAccount input.invalid ~ .error,
+#api .localAccount #attributeList ul li .attrEntry.validate input:invalid ~ .error,
+#attributeList ul li .attrEntry.validate #api .localAccount input:invalid ~ .error,
+.is-invalid ~ .invalid-tooltip,
+#attributeList ul li .attrEntry.validate input.invalid ~ .invalid-tooltip,
+#attributeList ul li .attrEntry.validate input:invalid ~ .invalid-tooltip {
   display: block;
 }
 
-.was-validated .form-control:invalid, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item input:invalid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated input:invalid, .was-validated input[type=email]:invalid, .was-validated input[type=password]:invalid, .was-validated input[type=text]:invalid, .form-control.is-invalid, .unified_container .row .panel-default #api .localAccount .entry .entry-item input.is-invalid, input.is-invalid[type=email], input.is-invalid[type=password], input.is-invalid[type=text] {
+.was-validated .form-control:invalid, .was-validated input[type=email]:invalid, .was-validated input[type=password]:invalid, .was-validated input[type=text]:invalid, .was-validated #api .localAccount .entry .entry-item input:invalid, #api .localAccount .entry .entry-item .was-validated input:invalid, .form-control.is-invalid, input.is-invalid[type=email], input.is-invalid[type=password], input.is-invalid[type=text], #attributeList ul li .attrEntry.validate input.form-control.invalid, #attributeList ul li .attrEntry.validate input.invalid[type=email], #attributeList ul li .attrEntry.validate input.invalid[type=password], #attributeList ul li .attrEntry.validate input.invalid[type=text], #attributeList ul li .attrEntry.validate input.form-control:invalid, #attributeList ul li .attrEntry.validate input[type=email]:invalid, #attributeList ul li .attrEntry.validate input[type=password]:invalid, #attributeList ul li .attrEntry.validate input[type=text]:invalid, #api .localAccount .entry .entry-item input.is-invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input.invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input.invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input:invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input:invalid {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
@@ -2688,7 +2697,7 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item input:invalid:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated input:invalid:focus, .was-validated input[type=email]:invalid:focus, .was-validated input[type=password]:invalid:focus, .was-validated input[type=text]:invalid:focus, .form-control.is-invalid:focus, .unified_container .row .panel-default #api .localAccount .entry .entry-item input.is-invalid:focus, input.is-invalid[type=email]:focus, input.is-invalid[type=password]:focus, input.is-invalid[type=text]:focus {
+.was-validated .form-control:invalid:focus, .was-validated input[type=email]:invalid:focus, .was-validated input[type=password]:invalid:focus, .was-validated input[type=text]:invalid:focus, .was-validated #api .localAccount .entry .entry-item input:invalid:focus, #api .localAccount .entry .entry-item .was-validated input:invalid:focus, .form-control.is-invalid:focus, input.is-invalid[type=email]:focus, input.is-invalid[type=password]:focus, input.is-invalid[type=text]:focus, #attributeList ul li .attrEntry.validate input.form-control.invalid:focus, #attributeList ul li .attrEntry.validate input.invalid[type=email]:focus, #attributeList ul li .attrEntry.validate input.invalid[type=password]:focus, #attributeList ul li .attrEntry.validate input.invalid[type=text]:focus, #attributeList ul li .attrEntry.validate input.form-control:focus:invalid, #attributeList ul li .attrEntry.validate input[type=email]:focus:invalid, #attributeList ul li .attrEntry.validate input[type=password]:focus:invalid, #attributeList ul li .attrEntry.validate input[type=text]:focus:invalid, #api .localAccount .entry .entry-item input.is-invalid:focus, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input.invalid:focus, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input.invalid:focus, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input:focus:invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input:focus:invalid {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
@@ -2698,46 +2707,50 @@ textarea.form-control-lg {
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
-.was-validated .form-select:invalid, .form-select.is-invalid {
+.was-validated .form-select:invalid, .form-select.is-invalid, #attributeList ul li .attrEntry.validate input.form-select.invalid, #attributeList ul li .attrEntry.validate input.form-select:invalid {
   border-color: #dc3545;
 }
-.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), #attributeList ul li .attrEntry.validate input.form-select.invalid:not([multiple]):not([size]), #attributeList ul li .attrEntry.validate input.form-select:not([multiple]):not([size]):invalid, .form-select.is-invalid:not([multiple])[size="1"], #attributeList ul li .attrEntry.validate input.form-select.invalid:not([multiple])[size="1"], #attributeList ul li .attrEntry.validate input.form-select:not([multiple])[size="1"]:invalid {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
+.was-validated .form-select:invalid:focus, .form-select.is-invalid:focus, #attributeList ul li .attrEntry.validate input.form-select.invalid:focus, #attributeList ul li .attrEntry.validate input.form-select:focus:invalid {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated .form-control-color:invalid, .form-control-color.is-invalid {
+.was-validated .form-control-color:invalid, .form-control-color.is-invalid, #attributeList ul li .attrEntry.validate input.form-control-color.invalid, #attributeList ul li .attrEntry.validate input.form-control-color:invalid {
   width: calc(3rem + calc(1.5em + 0.75rem));
 }
 
-.was-validated .form-check-input:invalid, .form-check-input.is-invalid {
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid, #attributeList ul li .attrEntry.validate input.form-check-input.invalid, #attributeList ul li .attrEntry.validate input.form-check-input:invalid {
   border-color: #dc3545;
 }
-.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
+.was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked, #attributeList ul li .attrEntry.validate input.form-check-input.invalid:checked, #attributeList ul li .attrEntry.validate input.form-check-input:checked:invalid {
   background-color: #dc3545;
 }
-.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus {
+.was-validated .form-check-input:invalid:focus, .form-check-input.is-invalid:focus, #attributeList ul li .attrEntry.validate input.form-check-input.invalid:focus, #attributeList ul li .attrEntry.validate input.form-check-input:focus:invalid {
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
-.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
+.was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label, #attributeList ul li .attrEntry.validate input.form-check-input.invalid ~ .form-check-label, #attributeList ul li .attrEntry.validate input.form-check-input:invalid ~ .form-check-label {
   color: #dc3545;
 }
 
-.form-check-inline .form-check-input ~ .invalid-feedback {
+.form-check-inline .form-check-input ~ .invalid-feedback, .form-check-inline #api .localAccount .form-check-input ~ .error, #api .localAccount .form-check-inline .form-check-input ~ .error {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input:not(:focus):invalid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):invalid, .was-validated .input-group > input[type=email]:not(:focus):invalid, .was-validated .input-group > input[type=password]:not(:focus):invalid, .was-validated .input-group > input[type=text]:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .unified_container .row .panel-default #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-invalid, .input-group > input[type=email]:not(:focus).is-invalid, .input-group > input[type=password]:not(:focus).is-invalid, .input-group > input[type=text]:not(:focus).is-invalid,
+.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .input-group > input[type=email]:not(:focus):invalid, .was-validated .input-group > input[type=password]:not(:focus):invalid, .was-validated .input-group > input[type=text]:not(:focus):invalid, .was-validated #api .localAccount .entry .entry-item .input-group > input:not(:focus):invalid, #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .input-group > input[type=email]:not(:focus).is-invalid, .input-group > input[type=password]:not(:focus).is-invalid, .input-group > input[type=text]:not(:focus).is-invalid, #attributeList ul li .attrEntry.validate .input-group > input.form-control.invalid:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=email]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=password]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=text]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.form-control:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=email]:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=password]:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=text]:not(:focus):invalid, #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate .input-group > input.invalid:not(:focus), #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item .input-group > input.invalid:not(:focus), #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate .input-group > input:not(:focus):invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item .input-group > input:not(:focus):invalid,
 .was-validated .input-group > .form-select:not(:focus):invalid,
 .input-group > .form-select:not(:focus).is-invalid,
+#attributeList ul li .attrEntry.validate .input-group > input.form-select.invalid:not(:focus),
+#attributeList ul li .attrEntry.validate .input-group > input.form-select:not(:focus):invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
-.input-group > .form-floating:not(:focus-within).is-invalid {
+.input-group > .form-floating:not(:focus-within).is-invalid,
+#attributeList ul li .attrEntry.validate .input-group > input.form-floating.invalid:not(:focus-within),
+#attributeList ul li .attrEntry.validate .input-group > input.form-floating:not(:focus-within):invalid {
   z-index: 4;
 }
 
@@ -10833,11 +10846,6 @@ body {
   background-image: url(http://localhost:62298/assets/images/1-1.png);
 }
 
-input::placeholder {
-  color: #6a6a6a;
-  opacity: 1;
-}
-
 img[data-tenant-branding-background=true] {
   object-fit: cover;
   left: 0;
@@ -10914,6 +10922,8 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 
 #api {
   margin: 0 auto;
+  display: table;
+  width: 100%;
 }
 #api ul li {
   display: block;
@@ -10922,20 +10932,55 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 #api .intro {
   margin-left: auto;
   margin-right: auto;
+  display: block;
+  text-align: left;
+}
+#api .intro h2, #api .intro .h2 {
+  font-size: 20px;
 }
 #api .intro p {
   text-align: left;
   font-size: 1.5em;
   margin: auto;
 }
+#api .localAccount {
+  top: 10px;
+  width: 100%;
+}
+#api .localAccount .intro h2, #api .localAccount .intro .h2 {
+  font-size: 20px;
+}
+#api .localAccount .error {
+  margin-top: 0;
+}
+#api .localAccount .error p {
+  margin: 5px 0;
+}
+#api .localAccount .entry .buttons {
+  margin: 0 0 23px 0;
+  text-align: left;
+}
+#api .localAccount .entry .entry-item {
+  position: relative;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block;
+}
+#api .localAccount .entry .entry-item label {
+  display: none;
+}
+#api .localAccount .entry .entry-item .password-label {
+  text-align: left;
+  height: 0;
+  left: 0;
+  width: 100%;
+}
 #api .working {
+  display: none;
   height: 30px;
   width: auto;
   background: url(data:image/gif;base64,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) no-repeat center bottom;
-}
-
-label {
-  font-weight: 600;
 }
 
 @media screen and (-ms-high-contrast: active) {
@@ -10986,9 +11031,6 @@ label {
 }
 #attributeList ul li input::-webkit-input-placeholder {
   text-indent: 20px;
-}
-#attributeList ul li .attrEntry.validate input.invalid, #attributeList ul li .attrEntry.validate input:invalid {
-  border: 1px solid #b00;
 }
 #attributeList ul li .attrEntry .itemLevel {
   display: none;
@@ -11101,6 +11143,14 @@ input[type=email], input[type=password], input[type=text] {
     box-shadow: none;
   }
 }
+.forgot-password {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+.forgot-password #forgotPassword {
+  font-size: 14px !important;
+}
+
 table {
   width: 40%;
   margin: auto;
@@ -11139,65 +11189,8 @@ table {
   font-size: 1.5em;
   display: none;
 }
-.unified_container .row .panel-default #api {
-  display: table;
-  margin: 0;
-  width: 100%;
-}
-.unified_container .row .panel-default #api .intro {
-  display: block;
-  text-align: left;
-}
-.unified_container .row .panel-default #api .intro h2, .unified_container .row .panel-default #api .intro .h2 {
-  font-size: 20px;
-}
 .unified_container .row .panel-default #api .divider {
   display: none;
-}
-.unified_container .row .panel-default #api .localAccount {
-  top: 10px;
-  width: 100%;
-}
-.unified_container .row .panel-default #api .localAccount .intro h2, .unified_container .row .panel-default #api .localAccount .intro .h2 {
-  font-size: 20px;
-}
-.unified_container .row .panel-default #api .localAccount .error {
-  color: #b00;
-  text-align: left;
-}
-.unified_container .row .panel-default #api .localAccount .entry .buttons {
-  margin: 0 0 23px 0;
-  text-align: left;
-}
-.unified_container .row .panel-default #api .localAccount .entry .entry-item {
-  position: relative;
-  width: 100%;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  display: block;
-}
-.unified_container .row .panel-default #api .localAccount .entry .entry-item label {
-  display: none;
-}
-.unified_container .row .panel-default #api .localAccount .entry .entry-item #password {
-  margin-bottom: 20px;
-}
-.unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label {
-  text-align: left;
-  height: 0;
-  left: 0;
-  width: 100%;
-}
-
-.forgot-password {
-  text-align: left;
-}
-.forgot-password.center-height {
-  position: absolute;
-  bottom: 0;
-  clear: right;
-  cursor: pointer;
-  text-align: right;
 }
 
 @keyframes slideInFromRight {
@@ -11231,10 +11224,6 @@ table {
   width: 100%;
 }
 
-.working {
-  display: none;
-}
-
 .unified_container .row .panel-default #api .claims-provider-list-text-links p {
   text-align: left;
   margin-top: -3rem;
@@ -11244,26 +11233,16 @@ table {
   text-align: left;
   margin-top: -1.5rem;
   margin-bottom: 1rem;
+  font-size: 14px;
 }
 .unified_container .row .panel-default #api .localAccount .create #createAccount {
-  border-radius: 0.5rem;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: 400;
-  height: inherit;
-  line-height: 1.3333333;
   padding: 10px 16px;
-  text-align: center;
   touch-action: manipulation;
   user-select: none;
-  white-space: nowrap;
   -moz-user-select: none;
   -ms-touch-action: manipulation;
   -ms-user-select: none;
   -webkit-user-select: none;
-  width: auto;
-  margin-top: -3rem;
-  cursor: pointer;
   animation: 0.5s ease-out 0s 1 slideInFromRight;
 }
 .unified_container .row .panel-default #api .social {

@@ -10,7 +10,7 @@ export default class Build {
         unified: [
             //'sign-up',
             'sign-in',
-            //'forgot-password'
+            'forgot-password'
         ]
     }
 
@@ -42,6 +42,8 @@ export default class Build {
         await FileHelpers.removeDirectoryAsync('./emulator', false,
             (file) => path.extname(file).toLowerCase() === '.html');
 
+        const pages = [];
+
         for (const k of Object.keys(this.examplesMap)) {
             const template = await this.loadTemplateAsync(k);
 
@@ -52,12 +54,16 @@ export default class Build {
 
                 template.getElementById('api').innerHTML = example.documentElement.innerHTML;
 
+                pages.push(v);
+
                 await FileHelpers.writeFileAndEnsurePathExistsAsync(
                     `./emulator/${v}.html`,
                     template.documentElement.innerHTML
                 );
             }
         }
+
+        await this.generateIndexAsync(pages);
     }
 
     async updateCssAsync() {
@@ -90,5 +96,14 @@ export default class Build {
         catch (e) {
             console.log('Failed to update SASS', e)
         }
+    }
+
+    async generateIndexAsync(pages) {
+        const dom = new JSDOM(`<!DOCTYPE html><html lang="en"><body><ul>${ pages.map(p => `<li><a href="${p}.html">${p}</a></li>`) }</ul></body></html>`);
+
+        await FileHelpers.writeFileAndEnsurePathExistsAsync(
+            `./emulator/index.html`,
+            dom.window.document.documentElement.innerHTML
+        );
     }
 }

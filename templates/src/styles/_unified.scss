@@ -1,14 +1,3 @@
-//idp
-table {
-  width: 40%;
-  margin: auto;
-}
-
-.alert-modal {
-  display: none;
-}
-//end idp
-
 .unified_container .row .panel-default {
   padding: 40px 30px;
   margin-top: auto;
@@ -47,74 +36,8 @@ table {
   }
 
   #api {
-    display: table;
-    margin: 0;
-    width: 100%;
-
-    .intro {
-      display: block;
-      text-align: left;
-
-      h2 {
-        font-size: 20px;
-      }
-    }
-
     .divider {
       display: none;
-    }
-
-    .localAccount {
-      top: 10px;
-      width: 100%;
-
-      .intro h2 {
-        font-size: 20px;
-      }
-
-      .error {
-        color: #b00;
-        text-align: left;
-      }
-
-      .entry {
-        .buttons {
-          margin: 0 0 23px 0;
-          text-align: left;
-
-          //button {
-          //  @extend .btn;
-          //  @extend .btn-primary;
-          //}
-        }
-
-        .entry-item {
-          position: relative;
-          width: 100%;
-          padding-top: 6px;
-          padding-bottom: 6px;
-          display: block;
-
-          label {
-            display: none;
-          }
-
-          input {
-            @extend .form-control;
-          }
-
-          #password {
-            margin-bottom: 20px;
-          }
-
-          .password-label {
-            text-align: left;
-            height: 0;
-            left: 0;
-            width: 100%;
-          }
-        }
-      }
     }
   }
 }
@@ -130,18 +53,6 @@ table {
 //    }
 //  }
 //}
-
-.forgot-password {
-  text-align: left;
-
-  &.center-height {
-    position: absolute;
-    bottom: 0;
-    clear: right;
-    cursor: pointer;
-    text-align: right;
-  }
-}
 
 @keyframes slideInFromRight {
   0% {
@@ -180,10 +91,6 @@ table {
   }
 }
 
-.working {
-  display: none;
-}
-
 .unified_container .row .panel-default #api {
   .claims-provider-list-text-links p {
     text-align: left;
@@ -196,27 +103,28 @@ table {
       text-align: left;
       margin-top: -1.5rem;
       margin-bottom: 1rem;
+      font-size: 14px;
     }
 
     #createAccount {
-      border-radius: 0.5rem;
-      display: inline-block;
-      font-size: 1em;
-      font-weight: 400;
-      height: inherit;
-      line-height: 1.3333333;
+      //border-radius: 0.5rem;
+      //display: inline-block;
+      //font-size: 1em;
+      //font-weight: 400;
+      //height: inherit;
+      //line-height: 1.3333333;
       padding: 10px 16px;
-      text-align: center;
+      //text-align: center;
       touch-action: manipulation;
       user-select: none;
-      white-space: nowrap;
+      //white-space: nowrap;
       -moz-user-select: none;
       -ms-touch-action: manipulation;
       -ms-user-select: none;
       -webkit-user-select: none;
-      width: auto;
-      margin-top: -3rem;
-      cursor: pointer;
+      //width: auto;
+      //margin-top: -3rem;
+      //cursor: pointer;
       animation: 0.5s ease-out 0s 1 slideInFromRight;
     }
   }
@@ -231,23 +139,8 @@ table {
   .accountButton {
     @extend .btn;
     @extend .btn-light;
-    //background-size: 10% 70%;
-    //background-position-x: 3%;
-    //background-position-y: 50%;
-    //background-repeat: no-repeat;
-    //display: block;
-    //font-size: 16px;
     height: 45px;
     width: 100%;
-    //margin-left: auto;
-    //overflow: hidden;
-    //padding: 0 50px;
-    //max-width: 380px;
-    //border: 1px solid #605e5c;
-    //background-color: #fff;
-    //-moz-border-radius: 0.5rem;
-    //-webkit-border-radius: 0.5rem;
-    //border-radius: 0.5rem;
     margin-top: 10px;
 
     &:hover {
