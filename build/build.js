@@ -1,9 +1,15 @@
 import {FileHelpers} from "./file-helpers.js";
-import path from "path";
 import {promises as fs} from "fs";
-import { JSDOM } from 'jsdom';
+import {JSDOM} from 'jsdom';
 import CleanCSS from "clean-css";
 import * as sass from "sass";
+
+/**
+ * CLI options
+ * @typedef {Object} Options
+ * @property {boolean} watch - Use the watcher
+ * @property {string} theme - Which theme to load
+ */
 
 export default class Build {
     examplesMap = {
@@ -16,9 +22,19 @@ export default class Build {
         ]
     }
 
+    /**
+     * @type {Options}
+     */
+    options;
+
+
+    constructor(options) {
+        this.options = options;
+    }
+
     async loadTemplateAsync(template) {
         const file = await fs.readFile(
-            `./templates/Bootstrap/${template}.html`, //todo this is rigid
+            `./themes/${this.options.theme}/templates/${template}.html`,
             'utf8'
         );
 
@@ -37,12 +53,12 @@ export default class Build {
     async updateAllAsync() {
         await this.updateCssAsync();
         await this.updateHtmlAsync();
-        await FileHelpers.copyFileAsync();
+        await FileHelpers.copyFileAsync(`./themes/${this.options.theme}/templates/assets`, './emulator/assets', true);
+        await FileHelpers.copyFileAsync(`./build/samples/favicon.ico`, './emulator/favicon.ico');
     }
 
     async updateHtmlAsync() {
-        await FileHelpers.removeDirectoryFilteredAsync('./emulator', false,
-            (file) => path.extname(file).toLowerCase() === '.html');
+        await FileHelpers.removeDirectoryAsync('./emulator', false);
 
         const pages = [];
 
@@ -74,7 +90,7 @@ export default class Build {
 
             //todo not sure why "default" is required but node is stupid
             const compileResult = sass.default.compile(
-                `./templates/src/styles/main.scss`, //todo might have to compile the other styles
+                `./themes/${this.options.theme}/src/styles/main.scss`,
                 {sourceMap: true}
             );
             const sourceMap = compileResult.sourceMap;
@@ -83,19 +99,18 @@ export default class Build {
             cleanedCss += sourceMapComment;
 
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `./templates/Bootstrap/assets/css/style.css`,
+                `./themes/${this.options.theme}/templates/assets/css/style.css`,
                 compileResult.css += sourceMapComment
             );
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `./templates/Bootstrap/assets/css/style.min.css`,
+                `./themes/${this.options.theme}/templates/assets/css/style.min.css`,
                 cleanedCss
             );
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `./templates/Bootstrap/assets/css/style.css.map`,
+                `../themes/${this.options.theme}/templates/assets/css/style.css.map`,
                 JSON.stringify(sourceMap)
             );
-        }
-        catch (e) {
+        } catch (e) {
             console.log('Failed to update SASS', e)
         }
     }

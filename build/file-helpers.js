@@ -48,16 +48,7 @@ export class FileHelpers {
     } catch (e) {}
   }
 
-  static async copyFileAsync(filePath = '', destination = '', isDirectory = false) {
-    //copy all
-    if (!filePath) {
-      await cp(
-          this.stringToPath(`./templates/Bootstrap/assets`),
-          this.stringToPath('./emulator/assets'),
-          { recursive: true }
-      );
-      return;
-    }
+  static async copyFileAsync(filePath, destination, isDirectory = false) {
     if (isDirectory) {
       await cp(
           this.stringToPath(filePath),

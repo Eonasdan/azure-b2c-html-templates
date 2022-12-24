@@ -34,7 +34,7 @@ export default class Watcher {
     startFileWatcher() {
         const output = './emulator'
         const samples = FileHelpers.stringToPath('./build/samples');
-        const source = path.join('templates', 'Bootstrap');
+        const source = path.join('themes', this.builder.options.theme, 'templates');
         const styles = path.join('templates', 'src', 'styles');
         const js = path.join(source, 'js');
         const copy = path.join(source, 'assets');

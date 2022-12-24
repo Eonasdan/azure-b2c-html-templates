@@ -39,7 +39,7 @@ In Azure AD B2C, you can craft your users' identity experiences so that the page
 
 This repo contains the following resources that can help you with the Azure AD B2C customization. 
 
-- [Ocean Blue template BS5](templates/Bootstrap)
+- [Ocean Blue template BS5](themes/Bootstrap5)
 
 ![Ocean Blue template screenshot](images/b2c_bootstrap5.png)
 
