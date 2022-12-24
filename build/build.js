@@ -8,9 +8,11 @@ import * as sass from "sass";
 export default class Build {
     examplesMap = {
         unified: [
-            //'sign-up',
-            'sign-in',
-            'forgot-password'
+            'sign-in'
+        ],
+        selfAsserted: [
+            'forgot-password',
+            'sign-up'
         ]
     }
 
@@ -39,7 +41,7 @@ export default class Build {
     }
 
     async updateHtmlAsync() {
-        await FileHelpers.removeDirectoryAsync('./emulator', false,
+        await FileHelpers.removeDirectoryFilteredAsync('./emulator', false,
             (file) => path.extname(file).toLowerCase() === '.html');
 
         const pages = [];
@@ -99,7 +101,14 @@ export default class Build {
     }
 
     async generateIndexAsync(pages) {
-        const dom = new JSDOM(`<!DOCTYPE html><html lang="en"><body><ul>${ pages.map(p => `<li><a href="${p}.html">${p}</a></li>`) }</ul></body></html>`);
+        const dom = new JSDOM(`<!DOCTYPE html><html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body style="background-color: #171717;color: #e3e3e3;">
+<ul class="nav flex-column">
+${pages.map(p => `<li class="nav-item"><a class="nav-link link-light" href="${p}.html">${p}</a></li>`).join('<br/>')}
+</ul></body></html>`);
 
         await FileHelpers.writeFileAndEnsurePathExistsAsync(
             `./emulator/index.html`,

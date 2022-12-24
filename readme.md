@@ -24,7 +24,8 @@ npm run watch
 ```
 
 will start a small node server that will compile the SCSS, copy any assets and combine the template pages (e.g. unified.html) 
-and the sample pages (e.g. sign-in.html).
+and the sample pages (e.g. sign-in.html). The emulator/samples is not supposed to be fully functional. The main goal is 
+give you an idea of what it would look like.
 
 # Call for samples
 It's unclear how some template pages get called. If you are working on a custom B2C setup, and you find a scenario

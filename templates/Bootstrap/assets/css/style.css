@@ -1953,7 +1953,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-.form-label, label {
+.form-label, #attributeList ul li label, label {
   margin-bottom: 0.5rem;
 }
 
@@ -1983,7 +1983,7 @@ progress {
   color: #6c757d;
 }
 
-.form-control, input[type=email], input[type=password], input[type=text], #api .localAccount .entry .entry-item input {
+.form-control, input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select, #attributeList ul li .attrEntry .dropdown_single {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1999,35 +1999,35 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control, input[type=email], input[type=password], input[type=text], #api .localAccount .entry .entry-item input {
+  .form-control, input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select, #attributeList ul li .attrEntry .dropdown_single {
     transition: none;
   }
 }
-.form-control[type=file], input[type=file][type=email], input[type=file][type=password], input[type=file][type=text], #api .localAccount .entry .entry-item input[type=file] {
+.form-control[type=file], input[type=file], #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select[type=file], #attributeList ul li .attrEntry [type=file].dropdown_single {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]), input[type=file][type=email]:not(:disabled):not([readonly]), input[type=file][type=password]:not(:disabled):not([readonly]), input[type=file][type=text]:not(:disabled):not([readonly]), #api .localAccount .entry .entry-item input[type=file]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), input[type=file]:not(:disabled):not([readonly]), #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select[type=file]:not(:disabled):not([readonly]), #attributeList ul li .attrEntry [type=file].dropdown_single:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus, input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, #api .localAccount .entry .entry-item input:focus {
+.form-control:focus, input:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:focus, #attributeList ul li .attrEntry .dropdown_single:focus {
   color: #212529;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
-.form-control::-webkit-date-and-time-value, input[type=email]::-webkit-date-and-time-value, input[type=password]::-webkit-date-and-time-value, input[type=text]::-webkit-date-and-time-value, #api .localAccount .entry .entry-item input::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, input::-webkit-date-and-time-value, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select::-webkit-date-and-time-value, #attributeList ul li .attrEntry .dropdown_single::-webkit-date-and-time-value {
   height: 1.5em;
 }
-.form-control::placeholder, input[type=email]::placeholder, input[type=password]::placeholder, input[type=text]::placeholder, #api .localAccount .entry .entry-item input::placeholder {
+.form-control::placeholder, input::placeholder, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select::placeholder, #attributeList ul li .attrEntry .dropdown_single::placeholder {
   color: #6c757d;
   opacity: 1;
 }
-.form-control:disabled, input[type=email]:disabled, input[type=password]:disabled, input[type=text]:disabled, #api .localAccount .entry .entry-item input:disabled {
+.form-control:disabled, input:disabled, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:disabled, #attributeList ul li .attrEntry .dropdown_single:disabled {
   background-color: #e9ecef;
   opacity: 1;
 }
-.form-control::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button, #api .localAccount .entry .entry-item input::file-selector-button {
+.form-control::file-selector-button, input::file-selector-button, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select::file-selector-button, #attributeList ul li .attrEntry .dropdown_single::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -2042,11 +2042,11 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button, input[type=email]::file-selector-button, input[type=password]::file-selector-button, input[type=text]::file-selector-button, #api .localAccount .entry .entry-item input::file-selector-button {
+  .form-control::file-selector-button, input::file-selector-button, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select::file-selector-button, #attributeList ul li .attrEntry .dropdown_single::file-selector-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button, input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button, input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button, #api .localAccount .entry .entry-item input:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, input:hover:not(:disabled):not([readonly])::file-selector-button, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:hover:not(:disabled):not([readonly])::file-selector-button, #attributeList ul li .attrEntry .dropdown_single:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: #dde0e3;
 }
 
@@ -2093,7 +2093,7 @@ progress {
   margin-inline-end: 1rem;
 }
 
-textarea.form-control {
+textarea.form-control, #attributeList ul li .attrEntry textarea.dropdown_single {
   min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
@@ -2389,7 +2389,7 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text], #api .localAccount .entry .entry-item .form-floating > input,
+.form-floating > .form-control, .form-floating > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select, #attributeList ul li .attrEntry .form-floating > .dropdown_single,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
   height: calc(3.5rem + 2px);
@@ -2416,21 +2416,21 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control, .form-floating > input[type=email], .form-floating > input[type=password], .form-floating > input[type=text], #api .localAccount .entry .entry-item .form-floating > input,
+.form-floating > .form-control, .form-floating > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select, #attributeList ul li .attrEntry .form-floating > .dropdown_single,
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::placeholder, .form-floating > input[type=email]::placeholder, .form-floating > input[type=password]::placeholder, .form-floating > input[type=text]::placeholder, #api .localAccount .entry .entry-item .form-floating > input::placeholder,
+.form-floating > .form-control::placeholder, .form-floating > input::placeholder, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select::placeholder, #attributeList ul li .attrEntry .form-floating > .dropdown_single::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:focus, .form-floating > input[type=email]:focus, .form-floating > input[type=password]:focus, .form-floating > input[type=text]:focus, #api .localAccount .entry .entry-item .form-floating > input:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > input[type=email]:not(:placeholder-shown), .form-floating > input[type=password]:not(:placeholder-shown), .form-floating > input[type=text]:not(:placeholder-shown), #api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown),
+.form-floating > .form-control:focus, .form-floating > input:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:focus, #attributeList ul li .attrEntry .form-floating > .dropdown_single:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > input:not(:placeholder-shown), #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:not(:placeholder-shown), #attributeList ul li .attrEntry .form-floating > .dropdown_single:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill, .form-floating > input[type=email]:-webkit-autofill, .form-floating > input[type=password]:-webkit-autofill, .form-floating > input[type=text]:-webkit-autofill, #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill,
+.form-floating > .form-control:-webkit-autofill, .form-floating > input:-webkit-autofill, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:-webkit-autofill, #attributeList ul li .attrEntry .form-floating > .dropdown_single:-webkit-autofill,
 .form-floating > .form-control-plaintext:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
@@ -2439,18 +2439,17 @@ textarea.form-control-lg {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus ~ label, .form-floating > input[type=email]:focus ~ label, .form-floating > input[type=password]:focus ~ label, .form-floating > input[type=text]:focus ~ label, #api .localAccount .entry .entry-item .form-floating > input:focus ~ label,
+.form-floating > .form-control:focus ~ label, .form-floating > input:focus ~ label, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:focus ~ label, #attributeList ul li .attrEntry .form-floating > .dropdown_single:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.form-floating > input[type=email]:not(:placeholder-shown) ~ label,
-.form-floating > input[type=password]:not(:placeholder-shown) ~ label,
-.form-floating > input[type=text]:not(:placeholder-shown) ~ label,
-#api .localAccount .entry .entry-item .form-floating > input:not(:placeholder-shown) ~ label,
+.form-floating > input:not(:placeholder-shown) ~ label,
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:not(:placeholder-shown) ~ label,
+#attributeList ul li .attrEntry .form-floating > .dropdown_single:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:-webkit-autofill ~ label, .form-floating > input[type=email]:-webkit-autofill ~ label, .form-floating > input[type=password]:-webkit-autofill ~ label, .form-floating > input[type=text]:-webkit-autofill ~ label, #api .localAccount .entry .entry-item .form-floating > input:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, .form-floating > input:-webkit-autofill ~ label, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .form-floating > select:-webkit-autofill ~ label, #attributeList ul li .attrEntry .form-floating > .dropdown_single:-webkit-autofill ~ label {
   opacity: 0.65;
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -2465,7 +2464,7 @@ textarea.form-control-lg {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control, .input-group > input[type=email], .input-group > input[type=password], .input-group > input[type=text], #api .localAccount .entry .entry-item .input-group > input,
+.input-group > .form-control, .input-group > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select, #attributeList ul li .attrEntry .input-group > .dropdown_single,
 .input-group > .form-select,
 .input-group > .form-floating {
   position: relative;
@@ -2473,7 +2472,7 @@ textarea.form-control-lg {
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus, .input-group > input[type=email]:focus, .input-group > input[type=password]:focus, .input-group > input[type=text]:focus, #api .localAccount .entry .entry-item .input-group > input:focus,
+.input-group > .form-control:focus, .input-group > input:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select:focus, #attributeList ul li .attrEntry .input-group > .dropdown_single:focus,
 .input-group > .form-select:focus,
 .input-group > .form-floating:focus-within {
   z-index: 5;
@@ -2501,7 +2500,7 @@ textarea.form-control-lg {
   border-radius: 0.375rem;
 }
 
-.input-group-lg > .form-control, .input-group-lg > input[type=email], .input-group-lg > input[type=password], .input-group-lg > input[type=text], #api .localAccount .entry .entry-item .input-group-lg > input,
+.input-group-lg > .form-control, .input-group-lg > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group-lg > select, #attributeList ul li .attrEntry .input-group-lg > .dropdown_single,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn,
@@ -2512,7 +2511,7 @@ textarea.form-control-lg {
   border-radius: 0.5rem;
 }
 
-.input-group-sm > .form-control, .input-group-sm > input[type=email], .input-group-sm > input[type=password], .input-group-sm > input[type=text], #api .localAccount .entry .entry-item .input-group-sm > input,
+.input-group-sm > .form-control, .input-group-sm > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group-sm > select, #attributeList ul li .attrEntry .input-group-sm > .dropdown_single,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn,
@@ -2531,10 +2530,9 @@ textarea.form-control-lg {
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-control,
-.input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=email],
-.input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=password],
-.input-group:not(.has-validation) > .form-floating:not(:last-child) > input[type=text],
-#api .localAccount .entry .entry-item .input-group:not(.has-validation) > .form-floating:not(:last-child) > input,
+.input-group:not(.has-validation) > .form-floating:not(:last-child) > input,
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group:not(.has-validation) > .form-floating:not(:last-child) > select,
+#attributeList ul li .attrEntry .input-group:not(.has-validation) > .form-floating:not(:last-child) > .dropdown_single,
 .input-group:not(.has-validation) > .form-floating:not(:last-child) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -2542,10 +2540,9 @@ textarea.form-control-lg {
 .input-group.has-validation > :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating),
 .input-group.has-validation > .dropdown-toggle:nth-last-child(n+4),
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-control,
-.input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=email],
-.input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=password],
-.input-group.has-validation > .form-floating:nth-last-child(n+3) > input[type=text],
-#api .localAccount .entry .entry-item .input-group.has-validation > .form-floating:nth-last-child(n+3) > input,
+.input-group.has-validation > .form-floating:nth-last-child(n+3) > input,
+#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group.has-validation > .form-floating:nth-last-child(n+3) > select,
+#attributeList ul li .attrEntry .input-group.has-validation > .form-floating:nth-last-child(n+3) > .dropdown_single,
 .input-group.has-validation > .form-floating:nth-last-child(n+3) > .form-select {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -2555,7 +2552,7 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-group > .form-floating:not(:first-child) > .form-control, .input-group > .form-floating:not(:first-child) > input[type=email], .input-group > .form-floating:not(:first-child) > input[type=password], .input-group > .form-floating:not(:first-child) > input[type=text], #api .localAccount .entry .entry-item .input-group > .form-floating:not(:first-child) > input,
+.input-group > .form-floating:not(:first-child) > .form-control, .input-group > .form-floating:not(:first-child) > input, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > .form-floating:not(:first-child) > select, #attributeList ul li .attrEntry .input-group > .form-floating:not(:first-child) > .dropdown_single,
 .input-group > .form-floating:not(:first-child) > .form-select {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -2590,7 +2587,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .was-validated input[type=email]:valid, .was-validated input[type=password]:valid, .was-validated input[type=text]:valid, .was-validated #api .localAccount .entry .entry-item input:valid, #api .localAccount .entry .entry-item .was-validated input:valid, .form-control.is-valid, input.is-valid[type=email], input.is-valid[type=password], input.is-valid[type=text], #api .localAccount .entry .entry-item input.is-valid {
+.was-validated .form-control:valid, .was-validated input:valid, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:valid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated select:valid, .was-validated #attributeList ul li .attrEntry .dropdown_single:valid, #attributeList ul li .attrEntry .was-validated .dropdown_single:valid, .form-control.is-valid, input.is-valid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select.is-valid, #attributeList ul li .attrEntry .is-valid.dropdown_single {
   border-color: #198754;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -2598,12 +2595,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .was-validated input[type=email]:valid:focus, .was-validated input[type=password]:valid:focus, .was-validated input[type=text]:valid:focus, .was-validated #api .localAccount .entry .entry-item input:valid:focus, #api .localAccount .entry .entry-item .was-validated input:valid:focus, .form-control.is-valid:focus, input.is-valid[type=email]:focus, input.is-valid[type=password]:focus, input.is-valid[type=text]:focus, #api .localAccount .entry .entry-item input.is-valid:focus {
+.was-validated .form-control:valid:focus, .was-validated input:valid:focus, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:valid:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated select:valid:focus, .was-validated #attributeList ul li .attrEntry .dropdown_single:valid:focus, #attributeList ul li .attrEntry .was-validated .dropdown_single:valid:focus, .form-control.is-valid:focus, input.is-valid:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select.is-valid:focus, #attributeList ul li .attrEntry .is-valid.dropdown_single:focus {
   border-color: #198754;
   box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
 }
 
-.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+.was-validated textarea.form-control:valid, .was-validated #attributeList ul li .attrEntry textarea.dropdown_single:valid, #attributeList ul li .attrEntry .was-validated textarea.dropdown_single:valid, textarea.form-control.is-valid, #attributeList ul li .attrEntry textarea.is-valid.dropdown_single {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2643,7 +2640,7 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .input-group > input[type=email]:not(:focus):valid, .was-validated .input-group > input[type=password]:not(:focus):valid, .was-validated .input-group > input[type=text]:not(:focus):valid, .was-validated #api .localAccount .entry .entry-item .input-group > input:not(:focus):valid, #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .input-group > input[type=email]:not(:focus).is-valid, .input-group > input[type=password]:not(:focus).is-valid, .input-group > input[type=text]:not(:focus).is-valid, #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-valid,
+.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .input-group > input:not(:focus):valid, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select:not(:focus):valid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated .input-group > select:not(:focus):valid, .was-validated #attributeList ul li .attrEntry .input-group > .dropdown_single:not(:focus):valid, #attributeList ul li .attrEntry .was-validated .input-group > .dropdown_single:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .input-group > input:not(:focus).is-valid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select:not(:focus).is-valid, #attributeList ul li .attrEntry .input-group > .dropdown_single:not(:focus).is-valid,
 .was-validated .input-group > .form-select:not(:focus):valid,
 .input-group > .form-select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
@@ -2689,7 +2686,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:invalid, .was-validated input[type=email]:invalid, .was-validated input[type=password]:invalid, .was-validated input[type=text]:invalid, .was-validated #api .localAccount .entry .entry-item input:invalid, #api .localAccount .entry .entry-item .was-validated input:invalid, .form-control.is-invalid, input.is-invalid[type=email], input.is-invalid[type=password], input.is-invalid[type=text], #attributeList ul li .attrEntry.validate input.form-control.invalid, #attributeList ul li .attrEntry.validate input.invalid[type=email], #attributeList ul li .attrEntry.validate input.invalid[type=password], #attributeList ul li .attrEntry.validate input.invalid[type=text], #attributeList ul li .attrEntry.validate input.form-control:invalid, #attributeList ul li .attrEntry.validate input[type=email]:invalid, #attributeList ul li .attrEntry.validate input[type=password]:invalid, #attributeList ul li .attrEntry.validate input[type=text]:invalid, #api .localAccount .entry .entry-item input.is-invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input.invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input.invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input:invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input:invalid {
+.was-validated .form-control:invalid, .was-validated input:invalid, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:invalid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated select:invalid, .was-validated #attributeList ul li .attrEntry .dropdown_single:invalid, #attributeList ul li .attrEntry .was-validated .dropdown_single:invalid, .form-control.is-invalid, input.is-invalid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select.is-invalid, #attributeList ul li .attrEntry .is-invalid.dropdown_single, #attributeList ul li .attrEntry.validate input.invalid, #attributeList ul li .attrEntry.validate input:invalid {
   border-color: #dc3545;
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
@@ -2697,12 +2694,12 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .was-validated input[type=email]:invalid:focus, .was-validated input[type=password]:invalid:focus, .was-validated input[type=text]:invalid:focus, .was-validated #api .localAccount .entry .entry-item input:invalid:focus, #api .localAccount .entry .entry-item .was-validated input:invalid:focus, .form-control.is-invalid:focus, input.is-invalid[type=email]:focus, input.is-invalid[type=password]:focus, input.is-invalid[type=text]:focus, #attributeList ul li .attrEntry.validate input.form-control.invalid:focus, #attributeList ul li .attrEntry.validate input.invalid[type=email]:focus, #attributeList ul li .attrEntry.validate input.invalid[type=password]:focus, #attributeList ul li .attrEntry.validate input.invalid[type=text]:focus, #attributeList ul li .attrEntry.validate input.form-control:focus:invalid, #attributeList ul li .attrEntry.validate input[type=email]:focus:invalid, #attributeList ul li .attrEntry.validate input[type=password]:focus:invalid, #attributeList ul li .attrEntry.validate input[type=text]:focus:invalid, #api .localAccount .entry .entry-item input.is-invalid:focus, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input.invalid:focus, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input.invalid:focus, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate input:focus:invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item input:focus:invalid {
+.was-validated .form-control:invalid:focus, .was-validated input:invalid:focus, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select:invalid:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated select:invalid:focus, .was-validated #attributeList ul li .attrEntry .dropdown_single:invalid:focus, #attributeList ul li .attrEntry .was-validated .dropdown_single:invalid:focus, .form-control.is-invalid:focus, input.is-invalid:focus, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select.is-invalid:focus, #attributeList ul li .attrEntry .is-invalid.dropdown_single:focus, #attributeList ul li .attrEntry.validate input.invalid:focus, #attributeList ul li .attrEntry.validate input:focus:invalid {
   border-color: #dc3545;
   box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
-.was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
+.was-validated textarea.form-control:invalid, .was-validated #attributeList ul li .attrEntry textarea.dropdown_single:invalid, #attributeList ul li .attrEntry .was-validated textarea.dropdown_single:invalid, textarea.form-control.is-invalid, #attributeList ul li .attrEntry textarea.is-invalid.dropdown_single {
   padding-right: calc(1.5em + 0.75rem);
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
@@ -2742,11 +2739,9 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .input-group > input[type=email]:not(:focus):invalid, .was-validated .input-group > input[type=password]:not(:focus):invalid, .was-validated .input-group > input[type=text]:not(:focus):invalid, .was-validated #api .localAccount .entry .entry-item .input-group > input:not(:focus):invalid, #api .localAccount .entry .entry-item .was-validated .input-group > input:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .input-group > input[type=email]:not(:focus).is-invalid, .input-group > input[type=password]:not(:focus).is-invalid, .input-group > input[type=text]:not(:focus).is-invalid, #attributeList ul li .attrEntry.validate .input-group > input.form-control.invalid:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=email]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=password]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.invalid[type=text]:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input.form-control:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=email]:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=password]:not(:focus):invalid, #attributeList ul li .attrEntry.validate .input-group > input[type=text]:not(:focus):invalid, #api .localAccount .entry .entry-item .input-group > input:not(:focus).is-invalid, #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate .input-group > input.invalid:not(:focus), #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item .input-group > input.invalid:not(:focus), #api .localAccount .entry .entry-item #attributeList ul li .attrEntry.validate .input-group > input:not(:focus):invalid, #attributeList ul li .attrEntry.validate #api .localAccount .entry .entry-item .input-group > input:not(:focus):invalid,
+.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .input-group > input:not(:focus):invalid, .was-validated #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select:not(:focus):invalid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .was-validated .input-group > select:not(:focus):invalid, .was-validated #attributeList ul li .attrEntry .input-group > .dropdown_single:not(:focus):invalid, #attributeList ul li .attrEntry .was-validated .input-group > .dropdown_single:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .input-group > input:not(:focus).is-invalid, #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date .input-group > select:not(:focus).is-invalid, #attributeList ul li .attrEntry .input-group > .dropdown_single:not(:focus).is-invalid, #attributeList ul li .attrEntry.validate .input-group > input.invalid:not(:focus), #attributeList ul li .attrEntry.validate .input-group > input:not(:focus):invalid,
 .was-validated .input-group > .form-select:not(:focus):invalid,
 .input-group > .form-select:not(:focus).is-invalid,
-#attributeList ul li .attrEntry.validate .input-group > input.form-select.invalid:not(:focus),
-#attributeList ul li .attrEntry.validate .input-group > input.form-select:not(:focus):invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid,
 #attributeList ul li .attrEntry.validate .input-group > input.form-floating.invalid:not(:focus-within),
@@ -2822,7 +2817,7 @@ textarea.form-control-lg {
 .btn-check:checked + .btn:focus-visible, .unified_container .row .panel-default #api .btn-check:checked + .accountButton:focus-visible, .buttons .btn-check:checked + button:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .unified_container .row .panel-default #api :not(.btn-check) + .accountButton:active:focus-visible, .buttons :not(.btn-check) + button:active:focus-visible, .btn:first-child:active:focus-visible, .unified_container .row .panel-default #api .accountButton:first-child:active:focus-visible, .buttons button:first-child:active:focus-visible, .btn.active:focus-visible, .unified_container .row .panel-default #api .active.accountButton:focus-visible, .buttons button.active:focus-visible, .btn.show:focus-visible, .unified_container .row .panel-default #api .show.accountButton:focus-visible, .buttons button.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .unified_container .row .panel-default #api .accountButton:disabled, .buttons button:disabled, .btn.disabled, .unified_container .row .panel-default #api .disabled.accountButton, .buttons button.disabled, fieldset:disabled .btn, fieldset:disabled .unified_container .row .panel-default #api .accountButton, .unified_container .row .panel-default #api fieldset:disabled .accountButton, fieldset:disabled .buttons button, .buttons fieldset:disabled button {
+.btn:disabled, .unified_container .row .panel-default #api .accountButton:disabled, .buttons button:disabled, .btn.disabled, .unified_container .row .panel-default #api .disabled.accountButton, .buttons button.disabled, .buttons button[aria-disabled=true], fieldset:disabled .btn, fieldset:disabled .unified_container .row .panel-default #api .accountButton, .unified_container .row .panel-default #api fieldset:disabled .accountButton, fieldset:disabled .buttons button, .buttons fieldset:disabled button {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3451,7 +3446,7 @@ textarea.form-control-lg {
   text-decoration: none;
   background-color: var(--bs-dropdown-link-active-bg);
 }
-.dropdown-item.disabled, .dropdown-item:disabled {
+.dropdown-item.disabled, .buttons button.dropdown-item[aria-disabled=true], .dropdown-item:disabled {
   color: var(--bs-dropdown-link-disabled-color);
   pointer-events: none;
   background-color: transparent;
@@ -3658,7 +3653,7 @@ textarea.form-control-lg {
 .nav-link:hover, .nav-link:focus {
   color: var(--bs-nav-link-hover-color);
 }
-.nav-link.disabled {
+.nav-link.disabled, .buttons button.nav-link[aria-disabled=true] {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
@@ -3685,7 +3680,7 @@ textarea.form-control-lg {
   isolation: isolate;
   border-color: var(--bs-nav-tabs-link-hover-border-color);
 }
-.nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
+.nav-tabs .nav-link.disabled, .nav-tabs .buttons button.nav-link[aria-disabled=true], .buttons .nav-tabs button.nav-link[aria-disabled=true], .nav-tabs .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
   background-color: transparent;
   border-color: transparent;
@@ -4581,7 +4576,7 @@ textarea.form-control-lg {
   background-color: var(--bs-pagination-active-bg);
   border-color: var(--bs-pagination-active-border-color);
 }
-.page-link.disabled, .disabled > .page-link {
+.page-link.disabled, .buttons button.page-link[aria-disabled=true], .disabled > .page-link, .buttons button[aria-disabled=true] > .page-link {
   color: var(--bs-pagination-disabled-color);
   pointer-events: none;
   background-color: var(--bs-pagination-disabled-bg);
@@ -4870,7 +4865,7 @@ textarea.form-control-lg {
   border-bottom-right-radius: inherit;
   border-bottom-left-radius: inherit;
 }
-.list-group-item.disabled, .list-group-item:disabled {
+.list-group-item.disabled, .buttons button.list-group-item[aria-disabled=true], .list-group-item:disabled {
   color: var(--bs-list-group-disabled-color);
   pointer-events: none;
   background-color: var(--bs-list-group-disabled-bg);
@@ -5175,7 +5170,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   opacity: 1;
 }
-.btn-close:disabled, .btn-close.disabled {
+.btn-close:disabled, .btn-close.disabled, .buttons button.btn-close[aria-disabled=true] {
   pointer-events: none;
   user-select: none;
   opacity: 0.25;
@@ -10875,6 +10870,7 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   display: inline-block;
   vertical-align: top;
   padding: 0;
+  position: relative;
 }
 
 .row {
@@ -10898,7 +10894,7 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 
 .buttons #cancel {
   padding: 0;
-  margin-left: auto;
+  margin-left: 25px;
   border: 0;
   width: inherit;
   position: absolute;
@@ -10914,10 +10910,16 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   color: #000 !important;
 }
 .buttons #cancel:before {
-  padding: 10px;
-  vertical-align: sub;
-  zoom: 90%;
-  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: -25px;
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-size: 20px 20px;
+  background-image: url(http://localhost:62298/assets/images/icons/left-long.svg);
+  background-repeat: no-repeat;
 }
 
 #api {
@@ -11006,50 +11008,27 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 #attributeList ul li.EmailBox label, #attributeList ul li.Password label, #attributeList ul li.TextBox label {
   display: none !important;
 }
+#attributeList ul li label {
+  text-align: left;
+}
 #attributeList ul li label[for=country] {
-  float: left;
   display: inline-block !important;
-  margin-bottom: 0.5rem;
 }
 #attributeList ul li label[for=cpiminternal_legalCountry] {
-  float: none;
   display: block !important;
-  text-align: left;
-  margin-bottom: 0.5rem;
 }
 #attributeList ul li label[for=cpiminternal_dateOfBirth] {
-  float: none;
-  text-align: left;
   display: block !important;
-  margin-bottom: 0.5rem;
-}
-#attributeList ul li input {
-  height: 50px;
-  width: 70%;
-  border-radius: 0.5rem;
-  text-indent: 20px;
-}
-#attributeList ul li input::-webkit-input-placeholder {
-  text-indent: 20px;
 }
 #attributeList ul li .attrEntry .itemLevel {
   display: none;
 }
-#attributeList ul li .attrEntry .dropdown_single {
-  height: 45px;
-  border-radius: 0.5rem;
-  width: 100%;
-  padding-left: 15px;
+#attributeList ul li .attrEntry .itemLevel.show {
+  display: block;
 }
 #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date {
   display: table;
   width: 100%;
-}
-#attributeList ul li .attrEntry div#cpiminternal_dateOfBirth.date select {
-  border-radius: 0.5rem;
-  display: inline-block;
-  height: 50px;
-  padding-left: 15px;
 }
 #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_day.day {
   margin-right: 3%;
@@ -11061,59 +11040,6 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 }
 #attributeList ul li .attrEntry div#cpiminternal_dateOfBirth select#cpiminternal_dateOfBirth_year.year {
   width: 33%;
-}
-#attributeList ul li .attrEntry .verify, #attributeList ul li .attrEntry .verificationControlContent .buttons {
-  margin-top: 2rem;
-  padding-bottom: 10px;
-  position: relative;
-}
-#attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send], #attributeList ul li .attrEntry .verificationControlContent .sendCode {
-  width: 60%;
-  height: 50px;
-  background-color: #296ec6;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-#attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send]:hover, #attributeList ul li .attrEntry .verificationControlContent .sendCode:hover {
-  background-color: #1662c7;
-}
-#attributeList ul li .attrEntry .verify .verifyButton, #attributeList ul li .attrEntry .verificationControlContent .verifyCode {
-  width: inherit;
-  padding: 0 20px;
-  height: 50px;
-  background-color: #296ec6;
-  color: #fff;
-  margin-right: 5px;
-  border-radius: 0.5rem;
-}
-#attributeList ul li .attrEntry .verify .verifyButton:hover, #attributeList ul li .attrEntry .verificationControlContent .verifyCode:hover {
-  background-color: #1662c7;
-}
-#attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_resend], #attributeList ul li .attrEntry .verificationControlContent .sendNewCode {
-  width: inherit;
-  padding: 0 20px;
-  border: 0;
-  font-size: 1em;
-  height: 50px;
-  right: 0;
-  bottom: -38px;
-  background-color: #296ec6;
-  color: #fff;
-  border-radius: 0.5rem;
-}
-#attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_resend]:hover, #attributeList ul li .attrEntry .verificationControlContent .sendNewCode:hover {
-  background-color: #1662c7;
-}
-#attributeList ul li .attrEntry .verify .editButton, #attributeList ul li .attrEntry .verificationControlContent .changeClaims {
-  border: none;
-  color: #fff;
-  background-color: #296ec6;
-  width: 60%;
-  height: 50px;
-  border-radius: 0.5rem;
-}
-#attributeList ul li .attrEntry .verify .editButton:hover, #attributeList ul li .attrEntry .verificationControlContent .changeClaims:hover {
-  background-color: #1662c7;
 }
 #attributeList ul li .attrEntry .verify #email_ver_input_label {
   display: none !important;
@@ -11160,35 +11086,32 @@ table {
   display: none;
 }
 
-.unified_container .row .panel-default {
+.row .panel-default {
   padding: 40px 30px;
   margin-top: auto;
   margin-bottom: auto;
   background-color: #fff;
 }
-.unified_container .row .panel-default .panel-body {
+.row .panel-default .panel-body {
   max-width: 380px;
   width: auto;
   margin: 0 auto;
 }
-.unified_container .row .panel-default .panel-body .companyName {
+.row .panel-default .panel-body .companyName {
   font-size: 1.5em;
   margin-bottom: 45px;
 }
-.unified_container .row .panel-default .panel-body .companyLogo {
+.row .panel-default .panel-body .companyLogo {
   display: block;
 }
-.unified_container .row .panel-default .panel-body img {
+.row .panel-default .panel-body img {
   max-width: 100%;
   width: auto;
   height: 70px;
   margin: 0 auto;
   display: block;
 }
-.unified_container .row .panel-default .panel-body h3, .unified_container .row .panel-default .panel-body .h3 {
-  font-size: 1.5em;
-  display: none;
-}
+
 .unified_container .row .panel-default #api .divider {
   display: none;
 }
@@ -11369,9 +11292,12 @@ table {
   background-color: #e81123 !important;
 }
 
-#SignInWithLogonNameExchange:before, #SignUpWithLogonEmailExchange:before, #SignUpWithLogonNameExchange:before {
-  content: "";
+#SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
   background-image: url(http://localhost:62298/assets/images/icons/envelope.svg);
+  background-size: 10% 70%;
+  background-position-x: 3%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
 }
 
 #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
@@ -11385,10 +11311,6 @@ table {
 #SignUpWithLogonEmailExchange.text-link:hover {
   background-image: none;
   background-color: transparent !important;
-}
-
-.buttons #cancel:before {
-  content: url(http://localhost:62298/assets/images/icons/left-long.svg);
 }
 
 .phonefactor_container .row .panel-default {
@@ -11586,33 +11508,6 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   padding-bottom: 0;
 }
 
-.self_asserted_container .row .panel-default {
-  padding: 40px 30px;
-  margin: auto;
-  height: 100%;
-  background-color: #fff;
-}
-.self_asserted_container .row .panel-default .panel-body {
-  margin: 0 auto;
-  max-width: 380px;
-  width: auto;
-  padding: 0;
-}
-.self_asserted_container .row .panel-default .panel-body img.companyLogo {
-  display: block;
-  margin: auto;
-  height: 70px;
-}
-.self_asserted_container .row .panel-default .panel-body .branding h1, .self_asserted_container .row .panel-default .panel-body .branding .h1 {
-  font-size: 1.5em;
-  color: #505050;
-}
-.self_asserted_container .row .panel-default .panel-body h3, .self_asserted_container .row .panel-default .panel-body .h3 {
-  font-size: 1.5em;
-  color: #505050;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
 .self_asserted_container .row .panel-default .panel-body .intro {
   display: none;
   text-align: left;
@@ -11622,34 +11517,17 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   display: none;
   margin-top: 10px;
 }
-.self_asserted_container .row .panel-default .panel-body #api #attributeVerification .pageLevel {
-  color: #b00;
-  text-align: left;
-}
-.self_asserted_container .row .panel-default .panel-body #api #attributeVerification .error {
-  color: #b00;
-  text-align: left;
-  margin-bottom: 5px;
-}
-
-.errorText {
-  border: none;
-  padding: 0;
-  background: 0 0;
-  color: #a61e0c;
-}
-
-#attributeVerification #attributeList ul {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul {
   display: flex;
   flex-direction: column;
 }
-#attributeVerification #attributeList ul li input {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input {
   width: 100%;
 }
-#attributeVerification #attributeList ul li input:invalid {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input:invalid {
   outline: unset;
 }
-#attributeVerification #attributeList ul li input[type=checkbox], #attributeVerification #attributeList ul li input[type=radio] {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=checkbox], .self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=radio] {
   width: 24px !important;
   box-shadow: none;
   height: 24px;
@@ -11658,10 +11536,10 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   clear: left;
   margin: 0.5rem;
 }
-#attributeVerification #attributeList ul li input[type=checkbox].invalid {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=checkbox].invalid {
   border: none;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox] {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox] {
   border: none;
   position: relative;
   width: 24px;
@@ -11679,17 +11557,17 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   outline: 0;
   text-indent: 0;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox] + label {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox] + label {
   float: left;
   display: inline-block !important;
   margin: 0.8rem 0 0 0.8rem;
   font-weight: 400;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox]:focus {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox]:focus {
   box-shadow: 0 0 0 2px #000;
   border-radius: 0.2rem;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox]:after {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox]:after {
   content: "";
   position: absolute;
   display: block;
@@ -11699,7 +11577,7 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   border: 1px solid #605e5c;
   border-radius: 2px;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox]:before {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox]:before {
   background-size: 10px 8px;
   background: #00f no-repeat 3px 4px;
   position: absolute;
@@ -11710,7 +11588,7 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   height: 100%;
   color: #f6ac4f;
 }
-#attributeVerification #attributeList ul li input input[type=checkbox]:checked:after {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input input[type=checkbox]:checked:after {
   content: "✓";
   position: absolute;
   box-sizing: border-box;
@@ -11724,7 +11602,7 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   border: 1px solid #296ec6;
   border-radius: 2px;
 }
-#attributeVerification #attributeList ul li input[type=radio] {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=radio] {
   -webkit-appearance: none;
   appearance: none;
   width: 20px;
@@ -11734,77 +11612,87 @@ button#sendCode, button#verifyCode, button#verifyPhone {
   background-color: #fff;
   outline: 0;
 }
-#attributeVerification #attributeList ul li input[type=radio] + label {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=radio] + label {
   float: left;
   display: inline-block !important;
   margin: 0.5rem;
   font-weight: 400;
 }
-#attributeVerification #attributeList ul li input[type=radio]:focus {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=radio]:focus {
   box-shadow: 0 0 0 3px #000;
 }
-#attributeVerification #attributeList ul li input[type=radio]:checked {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li input[type=radio]:checked {
   background-color: #296ec6;
   border: 1px solid #296ec6;
 }
-#attributeVerification #attributeList ul li .helpText {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .helpText {
   display: none;
   color: #a61e0c;
   text-align: justify;
 }
-#attributeVerification #attributeList ul li #email_success.verificationSuccessText, #attributeVerification #attributeList ul li #email_info {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li #email_success.verificationSuccessText, .self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li #email_info {
   float: left;
 }
-#attributeVerification #attributeList ul li .attrEntry .verificationInfoText {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .attrEntry .verificationInfoText {
   margin-bottom: 5px;
 }
-#attributeVerification #attributeList ul li .attrEntry select:hover {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .attrEntry select:hover {
   border-color: #888;
 }
-#attributeVerification #attributeList ul li .attrEntry select option {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .attrEntry select option {
   font-weight: 400;
 }
-#attributeVerification #attributeList ul li .attrEntry .validate #email_fail_retry {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .attrEntry .validate #email_fail_retry {
   float: left;
 }
-#attributeVerification #attributeList ul li .attrEntry .validate #email_fail_server {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .attrEntry .validate #email_fail_server {
   float: left;
   text-align: left;
 }
-#attributeVerification #attributeList ul li #email_fail_no_retry {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li #email_fail_no_retry {
   float: left;
 }
-#attributeVerification #attributeList ul li .buttons.verify label {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification #attributeList ul li .buttons.verify label {
   float: left;
 }
-
-div#email_intro {
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification .pageLevel {
+  color: #b00;
+  text-align: left;
+}
+.self_asserted_container .row .panel-default .panel-body #api #attributeVerification .error {
+  color: #b00;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.self_asserted_container .row .panel-default .panel-body #api .errorText {
+  border: none;
+  padding: 0;
+  background: 0 0;
+  color: #a61e0c;
+}
+.self_asserted_container .row .panel-default .panel-body #api div#email_intro {
   width: 100%;
   float: left;
   text-align: left;
 }
-div#email_info {
+.self_asserted_container .row .panel-default .panel-body #api div#email_info {
   text-align: left;
 }
-
-.disclaimer-container {
+.self_asserted_container .row .panel-default .panel-body #api .disclaimer-container {
   text-align: left;
   font-size: 10px;
 }
-.disclaimer-container .disclaimer-link {
+.self_asserted_container .row .panel-default .panel-body #api .disclaimer-container .disclaimer-link {
   display: block;
   width: fit-content;
 }
-
-.disclaimer-container-page-level {
+.self_asserted_container .row .panel-default .panel-body #api .disclaimer-container-page-level {
   margin-top: 10px;
 }
-
-.qrCodeControlContent img {
+.self_asserted_container .row .panel-default .panel-body #api .qrCodeControlContent img {
   margin-left: auto;
   margin-right: auto;
 }
-
-.qrCodeInfo {
+.self_asserted_container .row .panel-default .panel-body #api .qrCodeInfo {
   text-align: left;
 }/*# sourceMappingURL=style.css.map */

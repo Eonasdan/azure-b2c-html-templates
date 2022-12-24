@@ -119,10 +119,11 @@
 }
 
 #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-  &:before {
-    content: '';
-    background-image: url(#{$domain}/assets/images/icons/envelope.svg);
-  }
+  background-image: url(#{$domain}/assets/images/icons/envelope.svg);
+  background-size: 10% 70%;
+  background-position-x: 3%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
 }
 
 #SignInWithLogonNameExchange:hover, #SignUpWithLogonEmailExchange:hover, #SignUpWithLogonNameExchange:hover {
@@ -137,8 +138,4 @@
     background-image: none;
     background-color: transparent !important;
   }
-}
-
-.buttons #cancel:before {
-  content: url(#{$domain}/assets/images/icons/left-long.svg);
 }

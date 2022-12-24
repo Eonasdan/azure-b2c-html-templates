@@ -15,7 +15,17 @@ export class FileHelpers {
     return path.join(...input.split('/'));
   }
 
-  static async removeDirectoryAsync(directory, removeSelf = true, filter) {
+  static async removeDirectoryAsync(directory, removeSelf = true) {
+    try {
+      await fs.rm(directory, { recursive: true, force: true });
+
+      if (!removeSelf) await fs.mkdir(directory, { recursive: true });
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  static async removeDirectoryFilteredAsync(directory, removeSelf, filter) {
     try {
       let files = (await fs.readdir(directory)) || [];
       if (filter) files = files.filter(filter);
@@ -23,7 +33,7 @@ export class FileHelpers {
         const filePath = path.join(directory, file);
         if ((await fs.stat(filePath)).isFile())
           await FileHelpers.removeFileAsync(filePath);
-        else await FileHelpers.removeDirectoryAsync(filePath, true, filter);
+        else await FileHelpers.removeDirectoryFilteredAsync(filePath, removeSelf, filter);
       }
     } catch (e) {
       return;
@@ -38,7 +48,7 @@ export class FileHelpers {
     } catch (e) {}
   }
 
-  static async copyFileAsync(filePath, destination, isDirectory = false) {
+  static async copyFileAsync(filePath = '', destination = '', isDirectory = false) {
     //copy all
     if (!filePath) {
       await cp(

@@ -39,6 +39,7 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   display: inline-block;
   vertical-align: top;
   padding: 0;
+  position: relative;
 }
 
 .row {
@@ -62,13 +63,18 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
 
 .buttons {
   button {
-    @extend .btn;
-    @extend .btn-primary;
+    @extend .btn, .btn-primary;
+
+    &[aria-disabled=true] {
+      @extend .disabled
+    }
   }
 
+  $leftArrow: 20px;
+  $leftArrowMargin: $leftArrow + 5px;
   #cancel {
     padding: 0;
-    margin-left: auto;
+    margin-left: $leftArrowMargin;
     border: 0;
     width: inherit;
     position: absolute;
@@ -85,10 +91,27 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
     }
 
     &:before {
-      padding: 10px;
-      vertical-align: sub;
-      zoom: 90%;
-      display: inline-block;
+      //padding: 10px;
+      //vertical-align: sub;
+      //zoom: 90%;
+      //display: inline-block;
+      //display: inline-block;
+      //text-rendering: auto;
+
+      position: absolute;
+
+      top: 2px;
+      left: -$leftArrowMargin;
+      //font-size: 1.7rem;
+      //content: url(#{$domain}/assets/images/icons/left-long.svg);
+      //transform: scale(0.5);
+      content: "";
+      display:block;
+      height:$leftArrow;
+      width:$leftArrow;
+      background-size: $leftArrow $leftArrow;
+      background-image: url(#{$domain}/assets/images/icons/left-long.svg);
+      background-repeat: no-repeat;
     }
   }
 }
@@ -163,10 +186,6 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
           display: none;
         }
 
-        input {
-          @extend .form-control;
-        }
-
         #password {
           //margin-bottom: 1rem;
         }
@@ -221,37 +240,40 @@ label {
     }
 
     label {
+      @extend .form-label;
+      text-align: left;
+
       &[for="country"] {
-        float: left;
+        //float: left;
         display: inline-block !important;
-        margin-bottom: 0.5rem;
+        //margin-bottom: 0.5rem;
       }
 
       &[for="cpiminternal_legalCountry"] {
-        float: none;
+        //float: none;
         display: block !important;
-        text-align: left;
-        margin-bottom: 0.5rem;
+        //text-align: left;
+        //margin-bottom: 0.5rem;
       }
 
       &[for="cpiminternal_dateOfBirth"] {
-        float: none;
-        text-align: left;
+        //float: none;
+        //text-align: left;
         display: block !important;
-        margin-bottom: 0.5rem;
+        //margin-bottom: 0.5rem;
       }
     }
 
-    input {
-      height: 50px;
-      width: 70%;
-      border-radius: 0.5rem;
-      text-indent: 20px;
-
-      &::-webkit-input-placeholder {
-        text-indent: 20px;
-      }
-    }
+    //input {
+    //  height: 50px;
+    //  width: 70%;
+    //  border-radius: 0.5rem;
+    //  text-indent: 20px;
+    //
+    //  &::-webkit-input-placeholder {
+    //    text-indent: 20px;
+    //  }
+    //}
 
     .attrEntry {
       &.validate input {
@@ -262,13 +284,14 @@ label {
 
       .itemLevel {
         display: none;
+
+        &.show {
+          display: block;
+        }
       }
 
       .dropdown_single {
-        height: 45px;
-        border-radius: 0.5rem;
-        width: 100%;
-        padding-left: 15px;
+        @extend .form-control
       }
 
       div#cpiminternal_dateOfBirth {
@@ -277,10 +300,7 @@ label {
           width: 100%;
 
           select {
-            border-radius: 0.5rem;
-            display: inline-block;
-            height: 50px;
-            padding-left: 15px;
+            @extend .form-control
           }
         }
 
@@ -302,67 +322,67 @@ label {
       }
 
 
-      .verify, .verificationControlContent .buttons {
-        margin-top: 2rem;
-        padding-bottom: 10px;
-        position: relative;
-      }
-
-      .verify .sendButton[id$="ver_but_send"], .verificationControlContent .sendCode {
-        width: 60%;
-        height: 50px;
-        background-color: #296ec6;
-        color: #fff;
-        border-radius: 0.5rem;
-      }
-
-      .verify .sendButton[id$="ver_but_send"]:hover, .verificationControlContent .sendCode:hover {
-        background-color: #1662c7;
-      }
-
-      .verify .verifyButton, .verificationControlContent .verifyCode {
-        width: inherit;
-        padding: 0 20px;
-        height: 50px;
-        background-color: #296ec6;
-        color: #fff;
-        margin-right: 5px;
-        border-radius: 0.5rem;
-      }
-
-      .verify .verifyButton:hover, .verificationControlContent .verifyCode:hover {
-        background-color: #1662c7;
-      }
-
-      .verify .sendButton[id$="ver_but_resend"], .verificationControlContent .sendNewCode {
-        width: inherit;
-        padding: 0 20px;
-        border: 0;
-        font-size: 1em;
-        height: 50px;
-        right: 0;
-        bottom: -38px;
-        background-color: #296ec6;
-        color: #fff;
-        border-radius: 0.5rem;
-      }
-
-      .verify .sendButton[id$="ver_but_resend"]:hover, .verificationControlContent .sendNewCode:hover {
-        background-color: #1662c7;
-      }
-
-      .verify .editButton, .verificationControlContent .changeClaims {
-        border: none;
-        color: #fff;
-        background-color: #296ec6;
-        width: 60%;
-        height: 50px;
-        border-radius: 0.5rem;
-      }
-
-      .verify .editButton:hover, .verificationControlContent .changeClaims:hover {
-        background-color: #1662c7;
-      }
+      //.verify, .verificationControlContent .buttons {
+      //  margin-top: 2rem;
+      //  padding-bottom: 10px;
+      //  position: relative;
+      //}
+      //
+      //.verify .sendButton[id$="ver_but_send"], .verificationControlContent .sendCode {
+      //  width: 60%;
+      //  height: 50px;
+      //  background-color: #296ec6;
+      //  color: #fff;
+      //  border-radius: 0.5rem;
+      //}
+      //
+      //.verify .sendButton[id$="ver_but_send"]:hover, .verificationControlContent .sendCode:hover {
+      //  background-color: #1662c7;
+      //}
+      //
+      //.verify .verifyButton, .verificationControlContent .verifyCode {
+      //  width: inherit;
+      //  padding: 0 20px;
+      //  height: 50px;
+      //  background-color: #296ec6;
+      //  color: #fff;
+      //  margin-right: 5px;
+      //  border-radius: 0.5rem;
+      //}
+      //
+      //.verify .verifyButton:hover, .verificationControlContent .verifyCode:hover {
+      //  background-color: #1662c7;
+      //}
+      //
+      //.verify .sendButton[id$="ver_but_resend"], .verificationControlContent .sendNewCode {
+      //  width: inherit;
+      //  padding: 0 20px;
+      //  border: 0;
+      //  font-size: 1em;
+      //  height: 50px;
+      //  right: 0;
+      //  bottom: -38px;
+      //  background-color: #296ec6;
+      //  color: #fff;
+      //  border-radius: 0.5rem;
+      //}
+      //
+      //.verify .sendButton[id$="ver_but_resend"]:hover, .verificationControlContent .sendNewCode:hover {
+      //  background-color: #1662c7;
+      //}
+      //
+      //.verify .editButton, .verificationControlContent .changeClaims {
+      //  border: none;
+      //  color: #fff;
+      //  background-color: #296ec6;
+      //  width: 60%;
+      //  height: 50px;
+      //  border-radius: 0.5rem;
+      //}
+      //
+      //.verify .editButton:hover, .verificationControlContent .changeClaims:hover {
+      //  background-color: #1662c7;
+      //}
 
       .verify #email_ver_input_label {
         display: none !important;
@@ -376,8 +396,8 @@ label {
 }
 
 input {
+  @extend .form-control;
   &[type="email"], &[type="password"], &[type="text"] {
-    @extend .form-control;
     -webkit-appearance: none;
   }
 }
@@ -421,3 +441,34 @@ table {
   display: none;
 }
 //end idp
+
+//common panel
+.row .panel-default {
+  padding: 40px 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #fff;
+
+  .panel-body {
+    max-width: 380px;
+    width: auto;
+    margin: 0 auto;
+
+    .companyName {
+      font-size: 1.5em;
+      margin-bottom: 45px;
+    }
+
+    .companyLogo {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      width: auto;
+      height: 70px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
