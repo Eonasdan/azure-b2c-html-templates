@@ -20,7 +20,8 @@ class Make {
 
 program
     .option('--watch', 'Runs the watch which keeps the browser up to date with your changes.')
-    .option('theme', 'What theme do you want to build/watch', 'Bootstrap5')
+    .option('-t, --theme', 'What theme do you want to build/watch', 'Bootstrap5')
+    .option('-d, --domain <domain>', 'Domain to use in the SCSS for images, e.g. #{$domain}/assets => https://foo.com', 'http://localhost:62298')
     .parse(process.argv)
 
 new Make(program.opts()).doAsync().then();

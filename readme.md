@@ -27,6 +27,24 @@ will start a small node server that will compile the SCSS, copy any assets and c
 and the sample pages (e.g. sign-in.html). The emulator/samples is not supposed to be fully functional. The main goal is 
 give you an idea of what it would look like.
 
+## Themes
+While I'm attempting to build out a Bootstrap 5 theme, the code does support adding other themes. If you want to create 
+your own with another frontend framework or customize the base template just follow the basic folder structure.
+
+Under the `themes` directory, create a new folder "MyTheme". Create a `src` and `template` folder under that.
+All the html files under Bootstrap5/templates/ are required to be present. You will also want an `assets` folder under 
+the templates directory. This is where the output css will go.
+
+Under the `src` directory create a SCSS file called `main.scss`, e.g. `./MyTheme/src/styles/main.scss`
+
+To use this theme run `npm watch --theme MyTheme`
+
+## Building
+The B2C templates require a FQDN path your assets. When you are ready to upload your theme run `npm start --theme MyTheme --domain https://path.to.stuff`.
+The `theme` is optional and will default to the Bootstrap 5 theme. The `domain` option should be one level above where
+the assets folder get deployed. For example, `https://cdn.mysite.com/bc2/theme/[assets]` or just `https://foo.com/[assets]` or
+`https://[STORAGE-ACCOUNT].blob.core.windows.net/[CONTAINER]/[assets]`
+
 # Call for samples
 It's unclear how some template pages get called. If you are working on a custom B2C setup, and you find a scenario
 that is not covered by the existing samples (e.g. `b2c/api/../exception`), please either send me the inner html of the "api" element or a screenshot.

@@ -119,7 +119,7 @@
 }
 
 #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-  background-image: url(#{$domain}/assets/images/icons/envelope.svg);
+  background-image: url('#{getDomain()}/assets/images/icons/envelope.svg');
   background-size: 10% 70%;
   background-position-x: 3%;
   background-position-y: 50%;

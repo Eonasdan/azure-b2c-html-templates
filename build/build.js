@@ -2,13 +2,15 @@ import {FileHelpers} from "./file-helpers.js";
 import {promises as fs} from "fs";
 import {JSDOM} from 'jsdom';
 import CleanCSS from "clean-css";
-import * as sass from "sass";
+//todo not sure why "default" is required but node is stupid
+import {default as sass} from "sass";
 
 /**
  * CLI options
  * @typedef {Object} Options
  * @property {boolean} watch - Use the watcher
  * @property {string} theme - Which theme to load
+ * @property {string} domain - Replace the localhost domain in the SCSS with this value
  */
 
 export default class Build {
@@ -88,11 +90,15 @@ export default class Build {
         try {
             const sourceMapComment = '/*# sourceMappingURL=style.css.map */';
 
-            //todo not sure why "default" is required but node is stupid
-            const compileResult = sass.default.compile(
-                `./themes/${this.options.theme}/src/styles/main.scss`,
-                {sourceMap: true}
-            );
+            const compileResult = sass.compile(`./themes/${this.options.theme}/src/styles/main.scss`, {
+                sourceMap: true,
+                functions: {
+                    'getDomain()': () => {
+                        return new sass.SassString(this.options.domain);
+                    }
+                }
+            });
+
             const sourceMap = compileResult.sourceMap;
 
             let cleanedCss = new CleanCSS().minify(compileResult.css).styles;

@@ -10838,7 +10838,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
-  background-image: url(http://localhost:62298/assets/images/1-1.png);
+  background-image: url("http://localhost:62298/assets/images/1-1.png");
 }
 
 img[data-tenant-branding-background=true] {
@@ -10918,7 +10918,7 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
   height: 20px;
   width: 20px;
   background-size: 20px 20px;
-  background-image: url(http://localhost:62298/assets/images/icons/left-long.svg);
+  background-image: url("http://localhost:62298/assets/images/icons/left-long.svg");
   background-repeat: no-repeat;
 }
 
@@ -11293,7 +11293,7 @@ table {
 }
 
 #SignInWithLogonNameExchange, #SignUpWithLogonEmailExchange, #SignUpWithLogonNameExchange {
-  background-image: url(http://localhost:62298/assets/images/icons/envelope.svg);
+  background-image: url("http://localhost:62298/assets/images/icons/envelope.svg");
   background-size: 10% 70%;
   background-position-x: 3%;
   background-position-y: 50%;

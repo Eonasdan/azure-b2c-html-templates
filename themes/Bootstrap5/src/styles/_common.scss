@@ -7,7 +7,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: left;
-  background-image: url(#{$domain}/assets/images/1-1.png);
+  background-image: url('#{getDomain()}/assets/images/1-1.png');
 }
 
 img[data-tenant-branding-background=true] {
@@ -103,14 +103,14 @@ div[data-tenant-branding-background-color=true], img[data-tenant-branding-backgr
       top: 2px;
       left: -$leftArrowMargin;
       //font-size: 1.7rem;
-      //content: url(#{$domain}/assets/images/icons/left-long.svg);
+      //content: url('#{getDomain()}/assets/images/icons/left-long.svg');
       //transform: scale(0.5);
       content: "";
       display:block;
       height:$leftArrow;
       width:$leftArrow;
       background-size: $leftArrow $leftArrow;
-      background-image: url(#{$domain}/assets/images/icons/left-long.svg);
+      background-image: url('#{getDomain()}/assets/images/icons/left-long.svg');
       background-repeat: no-repeat;
     }
   }
