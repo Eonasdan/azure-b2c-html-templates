@@ -8,6 +8,18 @@ The repo is very much a work in progress. I have a couple of goals.
 4. Make it easier for others to customize the templates.
 5. Make it easier to use other CSS frameworks.
 
+## Get Going
+The most simple thing to do is produce the outputs ready to use. To do this run and replace `example.com` with your storage account or CDN url.
+
+```shell
+node ./build/make.js --pack -d https://example.com
+```
+
+This will build the SASS for the default theme (Bootstrap5), copy the theme templates and then anything in the `your-assets` folder to a folder called `output`. Please note that `output` gets cleared every time this command runs. Use the `your-assets` folder to store you logo file, etc.
+
+The git ignore file will not check in the `output`, `emulator` or `your-assets` folder. After cloning this repo, you may want to re-include `output` and `your-assets`.
+
+
 ## Bootstrap 5
 I couldn't find a Azure B2C Bootstrap 5 template to start from, so I decided to make one. 
 There is no source CSS that I can find to make customization easier. 

@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./build/make.js",
-    "watch": "node ./build/make.js --watch"
+    "watch": "node ./build/make.js --watch",
+    "pack": "node ./build/make.js --pack -d https://example.com"
   },
   "repository": {
     "type": "git",

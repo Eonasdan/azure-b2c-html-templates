@@ -4,11 +4,15 @@ import {JSDOM} from 'jsdom';
 import CleanCSS from "clean-css";
 //todo not sure why "default" is required but node is stupid
 import {default as sass} from "sass";
+import path from "path";
+
+export const defaultDomain = 'http://localhost:62298'
 
 /**
  * CLI options
  * @typedef {Object} Options
  * @property {boolean} watch - Use the watcher
+ * @property {boolean} pack - Pack everything to go.
  * @property {string} theme - Which theme to load
  * @property {string} domain - Replace the localhost domain in the SCSS with this value
  */
@@ -20,7 +24,8 @@ export default class Build {
         ],
         selfAsserted: [
             'forgot-password',
-            'sign-up'
+            'sign-up',
+            'user-details'
         ]
     }
 
@@ -72,6 +77,11 @@ export default class Build {
                 //problem might be if the sample gets changed, it won't be reloaded
                 const example = await this.loadSampleAsync(v);
 
+                //todo replace all localhost refs to domain!!
+
+                if (this.options.domain !== defaultDomain)
+                    template.outerHTML = template.outerHTML.replace(defaultDomain, this.options.domain)
+
                 template.getElementById('api').innerHTML = example.documentElement.innerHTML;
 
                 pages.push(v);
@@ -86,7 +96,8 @@ export default class Build {
         await this.generateIndexAsync(pages);
     }
 
-    async updateCssAsync() {
+    async updateCssAsync(domain = this.options.domain,
+                         destination = `./themes/${this.options.theme}/templates/assets/css`) {
         try {
             const sourceMapComment = '/*# sourceMappingURL=style.css.map */';
 
@@ -94,7 +105,7 @@ export default class Build {
                 sourceMap: true,
                 functions: {
                     'getDomain()': () => {
-                        return new sass.SassString(this.options.domain);
+                        return new sass.SassString(domain);
                     }
                 }
             });
@@ -105,20 +116,56 @@ export default class Build {
             cleanedCss += sourceMapComment;
 
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `./themes/${this.options.theme}/templates/assets/css/style.css`,
+                `${destination}/style.css`,
                 compileResult.css += sourceMapComment
             );
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `./themes/${this.options.theme}/templates/assets/css/style.min.css`,
+                `${destination}/style.min.css`,
                 cleanedCss
             );
             await FileHelpers.writeFileAndEnsurePathExistsAsync(
-                `../themes/${this.options.theme}/templates/assets/css/style.css.map`,
+                `${destination}/style.css.map`,
                 JSON.stringify(sourceMap)
             );
         } catch (e) {
             console.log('Failed to update SASS', e)
         }
+    }
+
+    async packAsync() {
+        const destination = './output';
+
+        await FileHelpers.removeDirectoryAsync(destination, false);
+
+        await FileHelpers.copyFileAsync(
+            `./themes/${this.options.theme}/templates`,
+            destination,
+            true
+        );
+
+        await this.updateCssAsync(this.options.domain,
+            `${destination}/assets/css`);
+
+        const files = (
+            await fs.readdir(destination)
+        ).filter((file) => path.extname(file).toLowerCase() === '.html');
+
+        for (const fileName of files) {
+            const fullPath = `${destination}/${fileName}`;
+            const file = await fs.readFile(fullPath, 'utf8');
+            const newText = file.replaceAll(defaultDomain, this.options.domain);
+
+            await FileHelpers.writeFileAndEnsurePathExistsAsync(
+                fullPath,
+                newText
+            );
+        }
+
+        await FileHelpers.copyFileAsync(
+            `./your-assets`,
+            destination,
+            true
+        );
     }
 
     async generateIndexAsync(pages) {
